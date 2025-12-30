@@ -1,0 +1,3 @@
+# 格式：IP,OS,Username,Password 192.168.1.102,windows,Administrator,P@ssw0rd 
+47.92.159.196,linux,root,Qaz20190213
+172.16.125.173,windows,a,123456

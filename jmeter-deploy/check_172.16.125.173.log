@@ -1,0 +1,1275 @@
+. 2025-12-26 12:14:01.520 --------------------------------------------------------------------------
+. 2025-12-26 12:14:01.520 WinSCP 版本6.5.5 (构建版本 16453 2025-11-19) (OS 10.0.18363 – Windows 10 Pro)
+. 2025-12-26 12:14:01.520 Configuration: HKCU\Software\Martin Prikryl\WinSCP 2\
+. 2025-12-26 12:14:01.520 Log level: Debug 1
+. 2025-12-26 12:14:01.520 Local account: WIN10-0024\admin
+. 2025-12-26 12:14:01.520 Working directory: D:\测试资料\性能监控环境搭建\jmeter-deploy
+. 2025-12-26 12:14:01.520 Process ID: 7220
+. 2025-12-26 12:14:01.534 Ancestor processes: WinSCP, powershell, explorer, ...
+. 2025-12-26 12:14:01.535 Command-line: "D:\测试资料\性能监控环境搭建\jmeter-deploy\tools\WinSCP\WinSCP.exe" /console=6.5.5 /consoleinstance=_15524_285 "/script=C:\Users\admin\AppData\Local\Temp\tmp852A.tmp" "/log=.\check_172.16.125.173.log" "/loglevel=1" "/timeout=30" 
+. 2025-12-26 12:14:01.536 Switch:    /console=6.5.5
+. 2025-12-26 12:14:01.536 Switch:    /consoleinstance=_15524_285
+. 2025-12-26 12:14:01.536 Switch:    /script=C:\Users\admin\AppData\Local\Temp\tmp852A.tmp
+. 2025-12-26 12:14:01.536 Switch:    /log=.\check_172.16.125.173.log
+. 2025-12-26 12:14:01.536 Switch:    /loglevel=1
+. 2025-12-26 12:14:01.536 Switch:    /timeout=30
+. 2025-12-26 12:14:01.536 Time zone: Current: GMT+8 (中国标准时间), No DST
+. 2025-12-26 12:14:01.536 Login time: 2025年12月26日 12:14:01
+. 2025-12-26 12:14:01.536 --------------------------------------------------------------------------
+. 2025-12-26 12:14:01.536 Script: Retrospectively logging previous script records:
+> 2025-12-26 12:14:01.536 Script: open sftp://a:***@172.16.125.173 -hostkey="*" -timeout=30
+> 2025-12-26 12:14:01.536 Script: Parameter: sftp://a:***@172.16.125.173
+> 2025-12-26 12:14:01.536 Script: Switch:    -hostkey=*
+> 2025-12-26 12:14:01.536 Script: Switch:    -timeout=30
+. 2025-12-26 12:14:01.536 --------------------------------------------------------------------------
+. 2025-12-26 12:14:01.536 Session name: a@172.16.125.173 (Ad-Hoc site)
+. 2025-12-26 12:14:01.536 Host name: 172.16.125.173 (Port: 22)
+. 2025-12-26 12:14:01.536 User name: a (Password: Yes, Key file: No, Passphrase: No)
+. 2025-12-26 12:14:01.536 Tunnel: No
+. 2025-12-26 12:14:01.536 Transfer Protocol: SFTP
+. 2025-12-26 12:14:01.536 Ping type: Off, Ping interval: 30 sec; Timeout: 30 sec
+. 2025-12-26 12:14:01.536 Disable Nagle: No
+. 2025-12-26 12:14:01.536 Proxy: None
+. 2025-12-26 12:14:01.536 Send buffer: 262144
+. 2025-12-26 12:14:01.536 Compression: No
+. 2025-12-26 12:14:01.536 Bypass authentication: No
+. 2025-12-26 12:14:01.536 Try agent: Yes; Agent forwarding: No; KI: Yes; GSSAPI: Yes
+. 2025-12-26 12:14:01.536 GSSAPI: KEX: No; Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2025-12-26 12:14:01.536 Ciphers: aes,chacha20,aesgcm,3des,WARN,des,blowfish,arcfour; Ssh2DES: No
+. 2025-12-26 12:14:01.536 KEX: ntru-curve25519,mlkem-curve25519,mlkem-nist,ecdh,dh-gex-sha1,dh-group18-sha512,dh-group17-sha512,dh-group16-sha512,dh-group15-sha512,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2025-12-26 12:14:01.536 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2025-12-26 12:14:01.536 Simple channel: Yes
+. 2025-12-26 12:14:01.536 Return code variable: Autodetect; Lookup user groups: Auto
+. 2025-12-26 12:14:01.536 Shell: default
+. 2025-12-26 12:14:01.536 EOL: LF, UTF: Auto
+. 2025-12-26 12:14:01.536 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2025-12-26 12:14:01.536 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2025-12-26 12:14:01.536 SFTP Bugs: Auto,Auto
+. 2025-12-26 12:14:01.536 SFTP Server: default
+. 2025-12-26 12:14:01.536 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2025-12-26 12:14:01.536 Cache directory changes: Yes, Permanent: Yes
+. 2025-12-26 12:14:01.536 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2025-12-26 12:14:01.536 DST mode: Unix
+. 2025-12-26 12:14:01.536 --------------------------------------------------------------------------
+< 2025-12-26 12:14:01.536 Script: 寻找主机...
+. 2025-12-26 12:14:01.537 Looking up host "172.16.125.173" for SSH connection
+. 2025-12-26 12:14:01.538 Connecting to 172.16.125.173 port 22
+. 2025-12-26 12:14:01.666 Connected to 172.16.125.173 (from 192.168.10.123:56061)
+< 2025-12-26 12:14:01.666 Script: 连接到主机...
+. 2025-12-26 12:14:01.666 Waiting for the server to continue with the initialization
+. 2025-12-26 12:14:01.666 We claim version: SSH-2.0-WinSCP_release_6.5.5
+. 2025-12-26 12:14:01.666 Detected network event
+. 2025-12-26 12:14:01.666 Connected to 172.16.125.173 (from 192.168.10.123:56061)
+. 2025-12-26 12:14:01.781 Detected network event
+. 2025-12-26 12:14:01.782 Waiting for the server to continue with the initialization
+. 2025-12-26 12:14:01.782 Remote version: SSH-2.0-OpenSSH_for_Windows_9.5
+. 2025-12-26 12:14:01.782 Using SSH protocol version 2
+. 2025-12-26 12:14:01.782 Have a known host key of type ssh-ed25519
+. 2025-12-26 12:14:01.901 Detected network event
+. 2025-12-26 12:14:01.901 Waiting for the server to continue with the initialization
+. 2025-12-26 12:14:01.901 Enabling strict key exchange semantics
+. 2025-12-26 12:14:01.902 Doing ECDH key exchange with curve Curve25519, using hash SHA-256
+. 2025-12-26 12:14:01.924 Detected network event
+. 2025-12-26 12:14:01.924 Waiting for the server to continue with the initialization
+. 2025-12-26 12:14:01.991 Server also has ecdsa-sha2-nistp256/rsa-sha2-512/rsa-sha2-256 host keys, but we don't know any of them
+. 2025-12-26 12:14:01.991 Host key fingerprint is:
+. 2025-12-26 12:14:01.991 ssh-ed25519 255 SHA256:zZaaNDrfO2wvz4/49ceEw2YSLl1QITM3RLOvFc+1Hn0
+. 2025-12-26 12:14:01.992 Verifying host key ssh-ed25519 0x62cc5b36a873c218 12980e344ba2b92f a44622c5e607b852 19ea4e4452154086 ,0x64ee115895856fa4 86e47767c83bfc83 3e7426229df7bb5b e6864e4cd7567015  with fingerprints ssh-ed25519 255 SHA256:zZaaNDrfO2wvz4/49ceEw2YSLl1QITM3RLOvFc+1Hn0, ssh-ed25519 255 85:c5:e8:70:f4:b0:8d:71:b7:ad:64:0b:f0:e9:9e:67
+< 2025-12-26 12:14:01.992 Script: 正在验证...
+. 2025-12-26 12:14:01.992 Host key does not match cached key 0x51d4845775a2fb3a e68b972b2703ba46 289d343be537c60b a1586506ca228e15 ,0x292e42e515f90b13 892acf1794740097 ccc2a6d7665fc2fa 91039f312303183f 
+. 2025-12-26 12:14:01.992 Host key matches cached key
+. 2025-12-26 12:14:01.992 Initialised AES-256 SDCTR (unaccelerated) [aes256-ctr] outbound encryption
+. 2025-12-26 12:14:01.993 Initialised HMAC-SHA-256 outbound MAC algorithm
+. 2025-12-26 12:14:01.993 Initialised AES-256 SDCTR (unaccelerated) [aes256-ctr] inbound encryption
+. 2025-12-26 12:14:01.993 Initialised HMAC-SHA-256 inbound MAC algorithm
+. 2025-12-26 12:14:02.063 Detected network event
+. 2025-12-26 12:14:02.063 Waiting for the server to continue with the initialization
+! 2025-12-26 12:14:02.064 Using username "a".
+< 2025-12-26 12:14:02.064 Script: 使用用户名 "a"。
+. 2025-12-26 12:14:02.085 Detected network event
+. 2025-12-26 12:14:02.085 Waiting for the server to continue with the initialization
+. 2025-12-26 12:14:02.085 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2025-12-26 12:14:02.085 Attempting keyboard-interactive authentication
+. 2025-12-26 12:14:02.097 Detected network event
+. 2025-12-26 12:14:02.097 Waiting for the server to continue with the initialization
+. 2025-12-26 12:14:02.097 Server refused keyboard-interactive authentication
+. 2025-12-26 12:14:02.097 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2025-12-26 12:14:02.097 Prompt (password, "SSH password", <no instructions>, "密码(&P)：")
+. 2025-12-26 12:14:02.097 Using stored password.
+< 2025-12-26 12:14:02.097 Script: 以预置密码进行验证。
+. 2025-12-26 12:14:02.097 Sent password
+. 2025-12-26 12:14:02.144 Detected network event
+. 2025-12-26 12:14:02.144 Waiting for the server to continue with the initialization
+. 2025-12-26 12:14:02.144 Access granted
+. 2025-12-26 12:14:02.144 Opening main session channel
+. 2025-12-26 12:14:02.280 Detected network event
+. 2025-12-26 12:14:02.280 Waiting for the server to continue with the initialization
+. 2025-12-26 12:14:02.322 Detected network event
+. 2025-12-26 12:14:02.322 Waiting for the server to continue with the initialization
+. 2025-12-26 12:14:02.322 Opened main channel
+. 2025-12-26 12:14:02.352 Detected network event
+. 2025-12-26 12:14:02.352 Waiting for the server to continue with the initialization
+. 2025-12-26 12:14:02.352 Started a shell/command
+< 2025-12-26 12:14:02.352 Script: 已验证。
+. 2025-12-26 12:14:02.352 --------------------------------------------------------------------------
+. 2025-12-26 12:14:02.352 Using SFTP protocol.
+. 2025-12-26 12:14:02.352 Doing startup conversation with host.
+< 2025-12-26 12:14:02.352 Script: 正在开始会话...
+. 2025-12-26 12:14:02.353 Well known server, allowing SFTP version 6.
+> 2025-12-26 12:14:02.353 Type: SSH_FXP_INIT, Size: 5, Number: -1
+. 2025-12-26 12:14:02.353 Sent 9 bytes
+. 2025-12-26 12:14:02.353 There are 0 bytes remaining in the send buffer
+. 2025-12-26 12:14:02.353 Waiting for another 4 bytes
+. 2025-12-26 12:14:02.496 Detected network event
+. 2025-12-26 12:14:02.496 Waiting for another 4 bytes
+. 2025-12-26 12:14:02.496 Received 254 bytes
+. 2025-12-26 12:14:02.496 Read 4 bytes (250 pending)
+. 2025-12-26 12:14:02.496 Read 250 bytes (0 pending)
+< 2025-12-26 12:14:02.496 Type: SSH_FXP_VERSION, Size: 250, Number: -1
+. 2025-12-26 12:14:02.496 SFTP version 3 negotiated.
+. 2025-12-26 12:14:02.496 Supports extension posix-rename@openssh.com="1"
+. 2025-12-26 12:14:02.496 Supports statvfs@openssh.com extension version 2
+. 2025-12-26 12:14:02.496 Supports hardlink@openssh.com extension version 1
+. 2025-12-26 12:14:02.496 Unknown server extension fsync@openssh.com="1"
+. 2025-12-26 12:14:02.496 Unknown server extension lsetstat@openssh.com="1"
+. 2025-12-26 12:14:02.496 Supports limits@openssh.com extension version 1
+. 2025-12-26 12:14:02.496 Unknown server extension expand-path@openssh.com="1"
+. 2025-12-26 12:14:02.496 Supports extension copy-data="1"
+. 2025-12-26 12:14:02.496 Unknown server extension home-directory="1"
+. 2025-12-26 12:14:02.496 We believe the server has signed timestamps bug
+. 2025-12-26 12:14:02.496 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+> 2025-12-26 12:14:02.496 Type: SSH_FXP_EXTENDED, Size: 27, Number: 200
+. 2025-12-26 12:14:02.496 Sent 31 bytes
+. 2025-12-26 12:14:02.496 There are 0 bytes remaining in the send buffer
+. 2025-12-26 12:14:02.496 Waiting for another 4 bytes
+. 2025-12-26 12:14:02.499 Detected network event
+. 2025-12-26 12:14:02.499 Waiting for another 4 bytes
+. 2025-12-26 12:14:02.499 Received 41 bytes
+. 2025-12-26 12:14:02.499 Read 4 bytes (37 pending)
+. 2025-12-26 12:14:02.499 Read 37 bytes (0 pending)
+< 2025-12-26 12:14:02.499 Type: SSH_FXP_EXTENDED_REPLY, Size: 37, Number: 200
+. 2025-12-26 12:14:02.499 Limiting packet size to server's limit of 262144 + 4 bytes
+. 2025-12-26 12:14:02.499 Getting current directory name.
+. 2025-12-26 12:14:02.499 Getting real path for '.'
+> 2025-12-26 12:14:02.499 Type: SSH_FXP_REALPATH, Size: 10, Number: 272
+. 2025-12-26 12:14:02.499 Sent 14 bytes
+. 2025-12-26 12:14:02.499 There are 0 bytes remaining in the send buffer
+. 2025-12-26 12:14:02.499 Waiting for another 4 bytes
+. 2025-12-26 12:14:02.502 Detected network event
+. 2025-12-26 12:14:02.502 Waiting for another 4 bytes
+. 2025-12-26 12:14:02.502 Received 47 bytes
+. 2025-12-26 12:14:02.502 Read 4 bytes (43 pending)
+. 2025-12-26 12:14:02.502 Read 43 bytes (0 pending)
+< 2025-12-26 12:14:02.502 Type: SSH_FXP_NAME, Size: 43, Number: 272
+. 2025-12-26 12:14:02.502 Real path is '/C:/Users/a'
+. 2025-12-26 12:14:02.502 Startup conversation with host finished.
+< 2025-12-26 12:14:02.502 Script: 会话已开始。
+< 2025-12-26 12:14:02.502 Script: 活动的会话：[1] a@172.16.125.173
+. 2025-12-26 12:14:02.502 Session upkeep
+> 2025-12-26 12:14:02.502 Script: call powershell -Command "Get-Process -Name java -ErrorAction SilentlyContinue | Where-Object { $_.CommandLine -like '*jmeter-server*' } | Select-Object Id, ProcessName"
+> 2025-12-26 12:14:02.502 Script: Parameter: powershell
+> 2025-12-26 12:14:02.502 Script: Switch:    -Command
+> 2025-12-26 12:14:02.502 Script: Parameter: Get-Process -Name java -ErrorAction SilentlyContinue | Where-Object { $_.CommandLine -like '*jmeter-server*' } | Select-Object Id, ProcessName
+< 2025-12-26 12:14:02.503 [Shell] Script: 寻找主机...
+. 2025-12-26 12:14:02.503 [Shell] Looking up host "172.16.125.173" for SSH connection
+. 2025-12-26 12:14:02.503 [Shell] Connecting to 172.16.125.173 port 22
+. 2025-12-26 12:14:02.506 [Shell] Connected to 172.16.125.173 (from 192.168.10.123:56062)
+< 2025-12-26 12:14:02.506 [Shell] Script: 连接到主机...
+. 2025-12-26 12:14:02.506 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:14:02.506 [Shell] We claim version: SSH-2.0-WinSCP_release_6.5.5
+. 2025-12-26 12:14:02.506 [Shell] Detected network event
+. 2025-12-26 12:14:02.506 [Shell] Connected to 172.16.125.173 (from 192.168.10.123:56062)
+. 2025-12-26 12:14:02.619 [Shell] Detected network event
+. 2025-12-26 12:14:02.619 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:14:02.619 [Shell] Remote version: SSH-2.0-OpenSSH_for_Windows_9.5
+. 2025-12-26 12:14:02.619 [Shell] Using SSH protocol version 2
+. 2025-12-26 12:14:02.620 [Shell] Have a known host key of type ssh-ed25519
+. 2025-12-26 12:14:02.729 [Shell] Detected network event
+. 2025-12-26 12:14:02.729 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:14:02.729 [Shell] Enabling strict key exchange semantics
+. 2025-12-26 12:14:02.730 [Shell] Doing ECDH key exchange with curve Curve25519, using hash SHA-256
+. 2025-12-26 12:14:02.750 [Shell] Detected network event
+. 2025-12-26 12:14:02.750 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:14:02.796 [Shell] Server also has ecdsa-sha2-nistp256/rsa-sha2-512/rsa-sha2-256 host keys, but we don't know any of them
+. 2025-12-26 12:14:02.796 [Shell] Host key fingerprint is:
+. 2025-12-26 12:14:02.796 [Shell] ssh-ed25519 255 SHA256:zZaaNDrfO2wvz4/49ceEw2YSLl1QITM3RLOvFc+1Hn0
+. 2025-12-26 12:14:02.796 [Shell] Verifying host key ssh-ed25519 0x62cc5b36a873c218 12980e344ba2b92f a44622c5e607b852 19ea4e4452154086 ,0x64ee115895856fa4 86e47767c83bfc83 3e7426229df7bb5b e6864e4cd7567015  with fingerprints ssh-ed25519 255 SHA256:zZaaNDrfO2wvz4/49ceEw2YSLl1QITM3RLOvFc+1Hn0, ssh-ed25519 255 85:c5:e8:70:f4:b0:8d:71:b7:ad:64:0b:f0:e9:9e:67
+< 2025-12-26 12:14:02.796 [Shell] Script: 正在验证...
+. 2025-12-26 12:14:02.797 [Shell] Host key does not match cached key 0x51d4845775a2fb3a e68b972b2703ba46 289d343be537c60b a1586506ca228e15 ,0x292e42e515f90b13 892acf1794740097 ccc2a6d7665fc2fa 91039f312303183f 
+. 2025-12-26 12:14:02.797 [Shell] Host key matches cached key
+. 2025-12-26 12:14:02.797 [Shell] Initialised AES-256 SDCTR (unaccelerated) [aes256-ctr] outbound encryption
+. 2025-12-26 12:14:02.797 [Shell] Initialised HMAC-SHA-256 outbound MAC algorithm
+. 2025-12-26 12:14:02.797 [Shell] Initialised AES-256 SDCTR (unaccelerated) [aes256-ctr] inbound encryption
+. 2025-12-26 12:14:02.797 [Shell] Initialised HMAC-SHA-256 inbound MAC algorithm
+. 2025-12-26 12:14:02.801 [Shell] Detected network event
+. 2025-12-26 12:14:02.801 [Shell] Waiting for the server to continue with the initialization
+! 2025-12-26 12:14:02.801 [Shell] Using username "a".
+< 2025-12-26 12:14:02.801 [Shell] Script: 使用用户名 "a"。
+. 2025-12-26 12:14:02.818 [Shell] Detected network event
+. 2025-12-26 12:14:02.818 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:14:02.818 [Shell] Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2025-12-26 12:14:02.818 [Shell] Attempting keyboard-interactive authentication
+. 2025-12-26 12:14:02.826 [Shell] Detected network event
+. 2025-12-26 12:14:02.826 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:14:02.826 [Shell] Server refused keyboard-interactive authentication
+. 2025-12-26 12:14:02.826 [Shell] Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2025-12-26 12:14:02.826 [Shell] Prompt (password, "SSH password", <no instructions>, "密码(&P)：")
+. 2025-12-26 12:14:02.826 [Shell] Using stored password.
+< 2025-12-26 12:14:02.826 [Shell] Script: 以预置密码进行验证。
+. 2025-12-26 12:14:02.826 [Shell] Sent password
+. 2025-12-26 12:14:02.874 [Shell] Detected network event
+. 2025-12-26 12:14:02.874 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:14:02.874 [Shell] Access granted
+. 2025-12-26 12:14:02.874 [Shell] Opening main session channel
+. 2025-12-26 12:14:02.987 [Shell] Detected network event
+. 2025-12-26 12:14:02.987 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:14:03.030 [Shell] Detected network event
+. 2025-12-26 12:14:03.030 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:14:03.030 [Shell] Opened main channel
+. 2025-12-26 12:14:03.057 [Shell] Detected network event
+. 2025-12-26 12:14:03.057 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:14:03.057 [Shell] Started a shell/command
+< 2025-12-26 12:14:03.057 [Shell] Script: 已验证。
+. 2025-12-26 12:14:03.057 [Shell] --------------------------------------------------------------------------
+. 2025-12-26 12:14:03.057 [Shell] Using SCP protocol.
+. 2025-12-26 12:14:03.057 [Shell] Doing startup conversation with host.
+< 2025-12-26 12:14:03.057 [Shell] Script: 正在开始会话...
+. 2025-12-26 12:14:03.057 [Shell] Skipping host startup message (if any).
+> 2025-12-26 12:14:03.057 [Shell] echo "WinSCP: this is end-of-file:0"
+. 2025-12-26 12:14:03.057 [Shell] Sent 37 bytes
+. 2025-12-26 12:14:03.057 [Shell] There are 0 bytes remaining in the send buffer
+. 2025-12-26 12:14:03.057 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:14:03.156 [Shell] Detected network event
+. 2025-12-26 12:14:03.156 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:14:03.156 [Shell] Received 40 bytes
+. 2025-12-26 12:14:03.156 [Shell] Read 1 bytes (39 pending)
+. 2025-12-26 12:14:03.156 [Shell] Read 39 bytes (0 pending)
+. 2025-12-26 12:14:03.156 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:14:03.156 [Shell] Detected network event
+. 2025-12-26 12:14:03.156 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:14:03.156 [Shell] Received 45 bytes
+. 2025-12-26 12:14:03.156 [Shell] Received 2 bytes
+. 2025-12-26 12:14:03.156 [Shell] Read 1 bytes (46 pending)
+. 2025-12-26 12:14:03.156 [Shell] Read 1 bytes (45 pending)
+< 2025-12-26 12:14:03.156 [Shell] Microsoft Windows [版本 10.0.26200.7462]
+. 2025-12-26 12:14:03.156 [Shell] Read 43 bytes (2 pending)
+< 2025-12-26 12:14:03.156 [Shell] (c) Microsoft Corporation。保留所有权利。
+. 2025-12-26 12:14:03.156 [Shell] Read 2 bytes (0 pending)
+< 2025-12-26 12:14:03.156 [Shell] 
+. 2025-12-26 12:14:03.156 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:14:03.156 [Shell] Detected network event
+. 2025-12-26 12:14:03.156 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:14:03.156 [Shell] Received 29 bytes
+. 2025-12-26 12:14:03.156 [Shell] Read 1 bytes (28 pending)
+. 2025-12-26 12:14:03.156 [Shell] Read 28 bytes (0 pending)
+. 2025-12-26 12:14:03.156 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:14:03.157 [Shell] Detected network event
+. 2025-12-26 12:14:03.157 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:14:03.157 [Shell] Received 37 bytes
+. 2025-12-26 12:14:03.157 [Shell] Read 1 bytes (36 pending)
+. 2025-12-26 12:14:03.157 [Shell] Read 36 bytes (0 pending)
+< 2025-12-26 12:14:03.157 [Shell] a@DESKTOP-0A06EDQ C:\Users\a>echo "WinSCP: this is end-of-file:0"
+. 2025-12-26 12:14:03.157 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:14:03.158 [Shell] Detected network event
+. 2025-12-26 12:14:03.158 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:14:03.158 [Shell] Received 33 bytes
+. 2025-12-26 12:14:03.158 [Shell] Read 1 bytes (32 pending)
+. 2025-12-26 12:14:03.158 [Shell] Read 32 bytes (0 pending)
+< 2025-12-26 12:14:03.158 [Shell] "WinSCP: this is end-of-file:0"
+. 2025-12-26 12:14:03.158 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:14:03.158 [Shell] Detected network event
+. 2025-12-26 12:14:03.158 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:14:03.158 [Shell] Received 2 bytes
+. 2025-12-26 12:14:03.158 [Shell] Read 1 bytes (1 pending)
+. 2025-12-26 12:14:03.158 [Shell] Read 1 bytes (0 pending)
+< 2025-12-26 12:14:03.158 [Shell] 
+. 2025-12-26 12:14:03.158 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:14:03.158 [Shell] Detected network event
+. 2025-12-26 12:14:03.158 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:14:03.158 [Shell] Received 29 bytes
+. 2025-12-26 12:14:03.158 [Shell] Read 1 bytes (28 pending)
+. 2025-12-26 12:14:03.158 [Shell] Read 28 bytes (0 pending)
+. 2025-12-26 12:14:03.158 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:14:33.349 [Shell] Waiting for data timed out, asking user what to do.
+. 2025-12-26 12:14:33.349 [Shell] Asking user:
+. 2025-12-26 12:14:33.349 [Shell] **30秒内没有连通主机。
+. 2025-12-26 12:14:33.349 [Shell] 
+. 2025-12-26 12:14:33.349 [Shell] 再等30秒？** ()
+< 2025-12-26 12:14:33.349 Script: 主机超过30秒无通信。继续等待...
+< 2025-12-26 12:14:33.349 请注意：如果问题依然出现，尝试关闭'优化连接缓冲大小'。
+< 2025-12-26 12:14:33.349 警告：中止这个操作为关闭连接！
+. 2025-12-26 12:15:34.229 [Shell] Answer: No
+. 2025-12-26 12:15:34.229 [Shell] Attempt to close connection due to fatal exception:
+* 2025-12-26 12:15:34.229 [Shell] **等待服务端应答时发生超时。**
+. 2025-12-26 12:15:34.229 [Shell] Closing connection.
+. 2025-12-26 12:15:34.229 [Shell] Sending special code: 1
+. 2025-12-26 12:15:34.250 [Shell] Detected network event
+. 2025-12-26 12:15:34.250 [Shell] Session sent command exit status 0
+. 2025-12-26 12:15:34.250 [Shell] Main session channel closed
+. 2025-12-26 12:15:34.250 [Shell] All channels closed
+< 2025-12-26 12:15:34.259 Script: 等待服务端应答时发生超时。
+< 2025-12-26 12:15:34.259 跳过开始消息时出错。你的Shell可能与本程序不兼容(推荐使用Bash)。
+. 2025-12-26 12:15:34.259 Script: Failed
+. 2025-12-26 12:15:34.259 Session upkeep
+. 2025-12-26 12:15:34.259 Script: Exit code: 1
+. 2025-12-26 12:15:34.259 Script: Max roundtrip: 547
+. 2025-12-26 12:15:34.259 Closing connection.
+. 2025-12-26 12:15:34.259 Sending special code: 1
+. 2025-12-26 12:15:34.277 Detected network event
+. 2025-12-26 12:15:34.279 Detected network event
+. 2025-12-26 12:15:34.279 Session sent command exit status 0
+. 2025-12-26 12:15:34.279 Main session channel closed
+. 2025-12-26 12:15:34.279 All channels closed
+. 2025-12-26 12:17:34.081 --------------------------------------------------------------------------
+. 2025-12-26 12:17:34.081 WinSCP 版本6.5.5 (构建版本 16453 2025-11-19) (OS 10.0.18363 – Windows 10 Pro)
+. 2025-12-26 12:17:34.081 Configuration: HKCU\Software\Martin Prikryl\WinSCP 2\
+. 2025-12-26 12:17:34.081 Log level: Debug 1
+. 2025-12-26 12:17:34.081 Local account: WIN10-0024\admin
+. 2025-12-26 12:17:34.081 Working directory: D:\测试资料\性能监控环境搭建\jmeter-deploy
+. 2025-12-26 12:17:34.081 Process ID: 19544
+. 2025-12-26 12:17:34.096 Ancestor processes: WinSCP, powershell, explorer, ...
+. 2025-12-26 12:17:34.096 Command-line: "D:\测试资料\性能监控环境搭建\jmeter-deploy\tools\WinSCP\WinSCP.exe" /console=6.5.5 /consoleinstance=_20484_437 "/script=C:\Users\admin\AppData\Local\Temp\tmpC391.tmp" "/log=.\check_172.16.125.173.log" "/loglevel=1" "/timeout=30" 
+. 2025-12-26 12:17:34.096 Switch:    /console=6.5.5
+. 2025-12-26 12:17:34.096 Switch:    /consoleinstance=_20484_437
+. 2025-12-26 12:17:34.096 Switch:    /script=C:\Users\admin\AppData\Local\Temp\tmpC391.tmp
+. 2025-12-26 12:17:34.096 Switch:    /log=.\check_172.16.125.173.log
+. 2025-12-26 12:17:34.096 Switch:    /loglevel=1
+. 2025-12-26 12:17:34.096 Switch:    /timeout=30
+. 2025-12-26 12:17:34.096 Time zone: Current: GMT+8 (中国标准时间), No DST
+. 2025-12-26 12:17:34.096 Login time: 2025年12月26日 12:17:34
+. 2025-12-26 12:17:34.096 --------------------------------------------------------------------------
+. 2025-12-26 12:17:34.096 Script: Retrospectively logging previous script records:
+> 2025-12-26 12:17:34.096 Script: open sftp://a:***@172.16.125.173 -hostkey="*" -timeout=30
+> 2025-12-26 12:17:34.096 Script: Parameter: sftp://a:***@172.16.125.173
+> 2025-12-26 12:17:34.096 Script: Switch:    -hostkey=*
+> 2025-12-26 12:17:34.096 Script: Switch:    -timeout=30
+. 2025-12-26 12:17:34.096 --------------------------------------------------------------------------
+. 2025-12-26 12:17:34.096 Session name: a@172.16.125.173 (Ad-Hoc site)
+. 2025-12-26 12:17:34.097 Host name: 172.16.125.173 (Port: 22)
+. 2025-12-26 12:17:34.097 User name: a (Password: Yes, Key file: No, Passphrase: No)
+. 2025-12-26 12:17:34.097 Tunnel: No
+. 2025-12-26 12:17:34.097 Transfer Protocol: SFTP
+. 2025-12-26 12:17:34.097 Ping type: Off, Ping interval: 30 sec; Timeout: 30 sec
+. 2025-12-26 12:17:34.097 Disable Nagle: No
+. 2025-12-26 12:17:34.097 Proxy: None
+. 2025-12-26 12:17:34.097 Send buffer: 262144
+. 2025-12-26 12:17:34.097 Compression: No
+. 2025-12-26 12:17:34.097 Bypass authentication: No
+. 2025-12-26 12:17:34.097 Try agent: Yes; Agent forwarding: No; KI: Yes; GSSAPI: Yes
+. 2025-12-26 12:17:34.097 GSSAPI: KEX: No; Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2025-12-26 12:17:34.097 Ciphers: aes,chacha20,aesgcm,3des,WARN,des,blowfish,arcfour; Ssh2DES: No
+. 2025-12-26 12:17:34.097 KEX: ntru-curve25519,mlkem-curve25519,mlkem-nist,ecdh,dh-gex-sha1,dh-group18-sha512,dh-group17-sha512,dh-group16-sha512,dh-group15-sha512,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2025-12-26 12:17:34.097 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2025-12-26 12:17:34.097 Simple channel: Yes
+. 2025-12-26 12:17:34.097 Return code variable: Autodetect; Lookup user groups: Auto
+. 2025-12-26 12:17:34.097 Shell: default
+. 2025-12-26 12:17:34.097 EOL: LF, UTF: Auto
+. 2025-12-26 12:17:34.097 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2025-12-26 12:17:34.097 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2025-12-26 12:17:34.097 SFTP Bugs: Auto,Auto
+. 2025-12-26 12:17:34.097 SFTP Server: default
+. 2025-12-26 12:17:34.097 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2025-12-26 12:17:34.097 Cache directory changes: Yes, Permanent: Yes
+. 2025-12-26 12:17:34.097 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2025-12-26 12:17:34.097 DST mode: Unix
+. 2025-12-26 12:17:34.097 --------------------------------------------------------------------------
+< 2025-12-26 12:17:34.097 Script: 寻找主机...
+. 2025-12-26 12:17:34.097 Looking up host "172.16.125.173" for SSH connection
+. 2025-12-26 12:17:34.099 Connecting to 172.16.125.173 port 22
+. 2025-12-26 12:17:34.102 Connected to 172.16.125.173 (from 192.168.10.123:56145)
+< 2025-12-26 12:17:34.102 Script: 连接到主机...
+. 2025-12-26 12:17:34.103 Waiting for the server to continue with the initialization
+. 2025-12-26 12:17:34.103 We claim version: SSH-2.0-WinSCP_release_6.5.5
+. 2025-12-26 12:17:34.103 Detected network event
+. 2025-12-26 12:17:34.103 Connected to 172.16.125.173 (from 192.168.10.123:56145)
+. 2025-12-26 12:17:34.220 Detected network event
+. 2025-12-26 12:17:34.220 Waiting for the server to continue with the initialization
+. 2025-12-26 12:17:34.220 Remote version: SSH-2.0-OpenSSH_for_Windows_9.5
+. 2025-12-26 12:17:34.220 Using SSH protocol version 2
+. 2025-12-26 12:17:34.221 Have a known host key of type ssh-ed25519
+. 2025-12-26 12:17:34.326 Detected network event
+. 2025-12-26 12:17:34.326 Waiting for the server to continue with the initialization
+. 2025-12-26 12:17:34.326 Enabling strict key exchange semantics
+. 2025-12-26 12:17:34.327 Doing ECDH key exchange with curve Curve25519, using hash SHA-256
+. 2025-12-26 12:17:34.349 Detected network event
+. 2025-12-26 12:17:34.349 Waiting for the server to continue with the initialization
+. 2025-12-26 12:17:34.395 Server also has ecdsa-sha2-nistp256/rsa-sha2-512/rsa-sha2-256 host keys, but we don't know any of them
+. 2025-12-26 12:17:34.395 Host key fingerprint is:
+. 2025-12-26 12:17:34.395 ssh-ed25519 255 SHA256:zZaaNDrfO2wvz4/49ceEw2YSLl1QITM3RLOvFc+1Hn0
+. 2025-12-26 12:17:34.396 Verifying host key ssh-ed25519 0x62cc5b36a873c218 12980e344ba2b92f a44622c5e607b852 19ea4e4452154086 ,0x64ee115895856fa4 86e47767c83bfc83 3e7426229df7bb5b e6864e4cd7567015  with fingerprints ssh-ed25519 255 SHA256:zZaaNDrfO2wvz4/49ceEw2YSLl1QITM3RLOvFc+1Hn0, ssh-ed25519 255 85:c5:e8:70:f4:b0:8d:71:b7:ad:64:0b:f0:e9:9e:67
+< 2025-12-26 12:17:34.396 Script: 正在验证...
+. 2025-12-26 12:17:34.396 Host key does not match cached key 0x51d4845775a2fb3a e68b972b2703ba46 289d343be537c60b a1586506ca228e15 ,0x292e42e515f90b13 892acf1794740097 ccc2a6d7665fc2fa 91039f312303183f 
+. 2025-12-26 12:17:34.396 Host key matches cached key
+. 2025-12-26 12:17:34.396 Initialised AES-256 SDCTR (unaccelerated) [aes256-ctr] outbound encryption
+. 2025-12-26 12:17:34.396 Initialised HMAC-SHA-256 outbound MAC algorithm
+. 2025-12-26 12:17:34.396 Initialised AES-256 SDCTR (unaccelerated) [aes256-ctr] inbound encryption
+. 2025-12-26 12:17:34.396 Initialised HMAC-SHA-256 inbound MAC algorithm
+. 2025-12-26 12:17:34.400 Detected network event
+. 2025-12-26 12:17:34.400 Waiting for the server to continue with the initialization
+! 2025-12-26 12:17:34.401 Using username "a".
+< 2025-12-26 12:17:34.401 Script: 使用用户名 "a"。
+. 2025-12-26 12:17:34.419 Detected network event
+. 2025-12-26 12:17:34.419 Waiting for the server to continue with the initialization
+. 2025-12-26 12:17:34.419 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2025-12-26 12:17:34.419 Attempting keyboard-interactive authentication
+. 2025-12-26 12:17:34.434 Detected network event
+. 2025-12-26 12:17:34.434 Waiting for the server to continue with the initialization
+. 2025-12-26 12:17:34.434 Server refused keyboard-interactive authentication
+. 2025-12-26 12:17:34.434 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2025-12-26 12:17:34.434 Prompt (password, "SSH password", <no instructions>, "密码(&P)：")
+. 2025-12-26 12:17:34.434 Using stored password.
+< 2025-12-26 12:17:34.434 Script: 以预置密码进行验证。
+. 2025-12-26 12:17:34.434 Sent password
+. 2025-12-26 12:17:34.481 Detected network event
+. 2025-12-26 12:17:34.481 Waiting for the server to continue with the initialization
+. 2025-12-26 12:17:34.481 Access granted
+. 2025-12-26 12:17:34.481 Opening main session channel
+. 2025-12-26 12:17:34.594 Detected network event
+. 2025-12-26 12:17:34.594 Waiting for the server to continue with the initialization
+. 2025-12-26 12:17:34.639 Detected network event
+. 2025-12-26 12:17:34.639 Waiting for the server to continue with the initialization
+. 2025-12-26 12:17:34.639 Opened main channel
+. 2025-12-26 12:17:34.669 Detected network event
+. 2025-12-26 12:17:34.669 Waiting for the server to continue with the initialization
+. 2025-12-26 12:17:34.669 Started a shell/command
+< 2025-12-26 12:17:34.669 Script: 已验证。
+. 2025-12-26 12:17:34.669 --------------------------------------------------------------------------
+. 2025-12-26 12:17:34.669 Using SFTP protocol.
+. 2025-12-26 12:17:34.669 Doing startup conversation with host.
+< 2025-12-26 12:17:34.670 Script: 正在开始会话...
+. 2025-12-26 12:17:34.670 Well known server, allowing SFTP version 6.
+> 2025-12-26 12:17:34.670 Type: SSH_FXP_INIT, Size: 5, Number: -1
+. 2025-12-26 12:17:34.670 Sent 9 bytes
+. 2025-12-26 12:17:34.670 There are 0 bytes remaining in the send buffer
+. 2025-12-26 12:17:34.670 Waiting for another 4 bytes
+. 2025-12-26 12:17:34.804 Detected network event
+. 2025-12-26 12:17:34.804 Waiting for another 4 bytes
+. 2025-12-26 12:17:34.804 Received 254 bytes
+. 2025-12-26 12:17:34.804 Read 4 bytes (250 pending)
+. 2025-12-26 12:17:34.804 Read 250 bytes (0 pending)
+< 2025-12-26 12:17:34.804 Type: SSH_FXP_VERSION, Size: 250, Number: -1
+. 2025-12-26 12:17:34.804 SFTP version 3 negotiated.
+. 2025-12-26 12:17:34.804 Supports extension posix-rename@openssh.com="1"
+. 2025-12-26 12:17:34.804 Supports statvfs@openssh.com extension version 2
+. 2025-12-26 12:17:34.804 Supports hardlink@openssh.com extension version 1
+. 2025-12-26 12:17:34.804 Unknown server extension fsync@openssh.com="1"
+. 2025-12-26 12:17:34.804 Unknown server extension lsetstat@openssh.com="1"
+. 2025-12-26 12:17:34.804 Supports limits@openssh.com extension version 1
+. 2025-12-26 12:17:34.804 Unknown server extension expand-path@openssh.com="1"
+. 2025-12-26 12:17:34.804 Supports extension copy-data="1"
+. 2025-12-26 12:17:34.804 Unknown server extension home-directory="1"
+. 2025-12-26 12:17:34.804 We believe the server has signed timestamps bug
+. 2025-12-26 12:17:34.804 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+> 2025-12-26 12:17:34.804 Type: SSH_FXP_EXTENDED, Size: 27, Number: 200
+. 2025-12-26 12:17:34.804 Sent 31 bytes
+. 2025-12-26 12:17:34.804 There are 0 bytes remaining in the send buffer
+. 2025-12-26 12:17:34.804 Waiting for another 4 bytes
+. 2025-12-26 12:17:34.807 Detected network event
+. 2025-12-26 12:17:34.807 Waiting for another 4 bytes
+. 2025-12-26 12:17:34.807 Received 41 bytes
+. 2025-12-26 12:17:34.807 Read 4 bytes (37 pending)
+. 2025-12-26 12:17:34.807 Read 37 bytes (0 pending)
+< 2025-12-26 12:17:34.807 Type: SSH_FXP_EXTENDED_REPLY, Size: 37, Number: 200
+. 2025-12-26 12:17:34.807 Limiting packet size to server's limit of 262144 + 4 bytes
+. 2025-12-26 12:17:34.807 Getting current directory name.
+. 2025-12-26 12:17:34.807 Getting real path for '.'
+> 2025-12-26 12:17:34.807 Type: SSH_FXP_REALPATH, Size: 10, Number: 272
+. 2025-12-26 12:17:34.807 Sent 14 bytes
+. 2025-12-26 12:17:34.807 There are 0 bytes remaining in the send buffer
+. 2025-12-26 12:17:34.807 Waiting for another 4 bytes
+. 2025-12-26 12:17:34.810 Detected network event
+. 2025-12-26 12:17:34.810 Waiting for another 4 bytes
+. 2025-12-26 12:17:34.810 Received 47 bytes
+. 2025-12-26 12:17:34.810 Read 4 bytes (43 pending)
+. 2025-12-26 12:17:34.810 Read 43 bytes (0 pending)
+< 2025-12-26 12:17:34.810 Type: SSH_FXP_NAME, Size: 43, Number: 272
+. 2025-12-26 12:17:34.810 Real path is '/C:/Users/a'
+. 2025-12-26 12:17:34.810 Startup conversation with host finished.
+< 2025-12-26 12:17:34.810 Script: 会话已开始。
+< 2025-12-26 12:17:34.810 Script: 活动的会话：[1] a@172.16.125.173
+. 2025-12-26 12:17:34.810 Session upkeep
+> 2025-12-26 12:17:34.811 Script: call powershell -Command "Get-Process -Name java -ErrorAction SilentlyContinue | Where-Object { $_.CommandLine -like '*jmeter-server*' } | Select-Object Id, ProcessName"
+> 2025-12-26 12:17:34.811 Script: Parameter: powershell
+> 2025-12-26 12:17:34.811 Script: Switch:    -Command
+> 2025-12-26 12:17:34.811 Script: Parameter: Get-Process -Name java -ErrorAction SilentlyContinue | Where-Object { $_.CommandLine -like '*jmeter-server*' } | Select-Object Id, ProcessName
+< 2025-12-26 12:17:34.811 [Shell] Script: 寻找主机...
+. 2025-12-26 12:17:34.812 [Shell] Looking up host "172.16.125.173" for SSH connection
+. 2025-12-26 12:17:34.812 [Shell] Connecting to 172.16.125.173 port 22
+. 2025-12-26 12:17:34.814 [Shell] Connected to 172.16.125.173 (from 192.168.10.123:56146)
+< 2025-12-26 12:17:34.814 [Shell] Script: 连接到主机...
+. 2025-12-26 12:17:34.814 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:17:34.814 [Shell] We claim version: SSH-2.0-WinSCP_release_6.5.5
+. 2025-12-26 12:17:34.814 [Shell] Detected network event
+. 2025-12-26 12:17:34.815 [Shell] Connected to 172.16.125.173 (from 192.168.10.123:56146)
+. 2025-12-26 12:17:34.920 [Shell] Detected network event
+. 2025-12-26 12:17:34.920 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:17:34.920 [Shell] Remote version: SSH-2.0-OpenSSH_for_Windows_9.5
+. 2025-12-26 12:17:34.920 [Shell] Using SSH protocol version 2
+. 2025-12-26 12:17:34.921 [Shell] Have a known host key of type ssh-ed25519
+. 2025-12-26 12:17:35.024 [Shell] Detected network event
+. 2025-12-26 12:17:35.024 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:17:35.024 [Shell] Enabling strict key exchange semantics
+. 2025-12-26 12:17:35.024 [Shell] Doing ECDH key exchange with curve Curve25519, using hash SHA-256
+. 2025-12-26 12:17:35.046 [Shell] Detected network event
+. 2025-12-26 12:17:35.046 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:17:35.090 [Shell] Server also has ecdsa-sha2-nistp256/rsa-sha2-512/rsa-sha2-256 host keys, but we don't know any of them
+. 2025-12-26 12:17:35.090 [Shell] Host key fingerprint is:
+. 2025-12-26 12:17:35.090 [Shell] ssh-ed25519 255 SHA256:zZaaNDrfO2wvz4/49ceEw2YSLl1QITM3RLOvFc+1Hn0
+. 2025-12-26 12:17:35.091 [Shell] Verifying host key ssh-ed25519 0x62cc5b36a873c218 12980e344ba2b92f a44622c5e607b852 19ea4e4452154086 ,0x64ee115895856fa4 86e47767c83bfc83 3e7426229df7bb5b e6864e4cd7567015  with fingerprints ssh-ed25519 255 SHA256:zZaaNDrfO2wvz4/49ceEw2YSLl1QITM3RLOvFc+1Hn0, ssh-ed25519 255 85:c5:e8:70:f4:b0:8d:71:b7:ad:64:0b:f0:e9:9e:67
+< 2025-12-26 12:17:35.091 [Shell] Script: 正在验证...
+. 2025-12-26 12:17:35.091 [Shell] Host key does not match cached key 0x51d4845775a2fb3a e68b972b2703ba46 289d343be537c60b a1586506ca228e15 ,0x292e42e515f90b13 892acf1794740097 ccc2a6d7665fc2fa 91039f312303183f 
+. 2025-12-26 12:17:35.091 [Shell] Host key matches cached key
+. 2025-12-26 12:17:35.092 [Shell] Initialised AES-256 SDCTR (unaccelerated) [aes256-ctr] outbound encryption
+. 2025-12-26 12:17:35.092 [Shell] Initialised HMAC-SHA-256 outbound MAC algorithm
+. 2025-12-26 12:17:35.092 [Shell] Initialised AES-256 SDCTR (unaccelerated) [aes256-ctr] inbound encryption
+. 2025-12-26 12:17:35.092 [Shell] Initialised HMAC-SHA-256 inbound MAC algorithm
+. 2025-12-26 12:17:35.095 [Shell] Detected network event
+. 2025-12-26 12:17:35.095 [Shell] Waiting for the server to continue with the initialization
+! 2025-12-26 12:17:35.096 [Shell] Using username "a".
+< 2025-12-26 12:17:35.096 [Shell] Script: 使用用户名 "a"。
+. 2025-12-26 12:17:35.114 [Shell] Detected network event
+. 2025-12-26 12:17:35.114 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:17:35.114 [Shell] Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2025-12-26 12:17:35.114 [Shell] Attempting keyboard-interactive authentication
+. 2025-12-26 12:17:35.130 [Shell] Detected network event
+. 2025-12-26 12:17:35.130 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:17:35.130 [Shell] Server refused keyboard-interactive authentication
+. 2025-12-26 12:17:35.130 [Shell] Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2025-12-26 12:17:35.130 [Shell] Prompt (password, "SSH password", <no instructions>, "密码(&P)：")
+. 2025-12-26 12:17:35.130 [Shell] Using stored password.
+< 2025-12-26 12:17:35.130 [Shell] Script: 以预置密码进行验证。
+. 2025-12-26 12:17:35.130 [Shell] Sent password
+. 2025-12-26 12:17:35.177 [Shell] Detected network event
+. 2025-12-26 12:17:35.177 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:17:35.177 [Shell] Access granted
+. 2025-12-26 12:17:35.177 [Shell] Opening main session channel
+. 2025-12-26 12:17:35.290 [Shell] Detected network event
+. 2025-12-26 12:17:35.290 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:17:35.335 [Shell] Detected network event
+. 2025-12-26 12:17:35.335 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:17:35.335 [Shell] Opened main channel
+. 2025-12-26 12:17:35.363 [Shell] Detected network event
+. 2025-12-26 12:17:35.363 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:17:35.363 [Shell] Started a shell/command
+< 2025-12-26 12:17:35.363 [Shell] Script: 已验证。
+. 2025-12-26 12:17:35.363 [Shell] --------------------------------------------------------------------------
+. 2025-12-26 12:17:35.363 [Shell] Using SCP protocol.
+. 2025-12-26 12:17:35.363 [Shell] Doing startup conversation with host.
+< 2025-12-26 12:17:35.363 [Shell] Script: 正在开始会话...
+. 2025-12-26 12:17:35.363 [Shell] Skipping host startup message (if any).
+> 2025-12-26 12:17:35.363 [Shell] echo "WinSCP: this is end-of-file:0"
+. 2025-12-26 12:17:35.364 [Shell] Sent 37 bytes
+. 2025-12-26 12:17:35.364 [Shell] There are 0 bytes remaining in the send buffer
+. 2025-12-26 12:17:35.364 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:17:35.457 [Shell] Detected network event
+. 2025-12-26 12:17:35.457 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:17:35.457 [Shell] Received 40 bytes
+. 2025-12-26 12:17:35.457 [Shell] Read 1 bytes (39 pending)
+. 2025-12-26 12:17:35.457 [Shell] Read 39 bytes (0 pending)
+. 2025-12-26 12:17:35.457 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:17:35.457 [Shell] Detected network event
+. 2025-12-26 12:17:35.457 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:17:35.457 [Shell] Received 45 bytes
+. 2025-12-26 12:17:35.457 [Shell] Read 1 bytes (44 pending)
+. 2025-12-26 12:17:35.457 [Shell] Read 1 bytes (43 pending)
+< 2025-12-26 12:17:35.457 [Shell] Microsoft Windows [版本 10.0.26200.7462]
+. 2025-12-26 12:17:35.457 [Shell] Read 43 bytes (0 pending)
+< 2025-12-26 12:17:35.457 [Shell] (c) Microsoft Corporation。保留所有权利。
+. 2025-12-26 12:17:35.457 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:17:35.457 [Shell] Detected network event
+. 2025-12-26 12:17:35.457 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:17:35.457 [Shell] Received 2 bytes
+. 2025-12-26 12:17:35.458 [Shell] Read 1 bytes (1 pending)
+. 2025-12-26 12:17:35.458 [Shell] Read 1 bytes (0 pending)
+< 2025-12-26 12:17:35.458 [Shell] 
+. 2025-12-26 12:17:35.458 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:17:35.458 [Shell] Detected network event
+. 2025-12-26 12:17:35.458 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:17:35.458 [Shell] Received 29 bytes
+. 2025-12-26 12:17:35.458 [Shell] Read 1 bytes (28 pending)
+. 2025-12-26 12:17:35.458 [Shell] Read 28 bytes (0 pending)
+. 2025-12-26 12:17:35.458 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:17:35.458 [Shell] Detected network event
+. 2025-12-26 12:17:35.458 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:17:35.458 [Shell] Received 37 bytes
+. 2025-12-26 12:17:35.458 [Shell] Read 1 bytes (36 pending)
+. 2025-12-26 12:17:35.458 [Shell] Read 36 bytes (0 pending)
+< 2025-12-26 12:17:35.458 [Shell] a@DESKTOP-0A06EDQ C:\Users\a>echo "WinSCP: this is end-of-file:0"
+. 2025-12-26 12:17:35.458 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:17:35.460 [Shell] Detected network event
+. 2025-12-26 12:17:35.460 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:17:35.460 [Shell] Received 33 bytes
+. 2025-12-26 12:17:35.460 [Shell] Read 1 bytes (32 pending)
+. 2025-12-26 12:17:35.460 [Shell] Read 32 bytes (0 pending)
+< 2025-12-26 12:17:35.460 [Shell] "WinSCP: this is end-of-file:0"
+. 2025-12-26 12:17:35.460 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:17:35.460 [Shell] Detected network event
+. 2025-12-26 12:17:35.460 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:17:35.460 [Shell] Received 2 bytes
+. 2025-12-26 12:17:35.460 [Shell] Read 1 bytes (1 pending)
+. 2025-12-26 12:17:35.460 [Shell] Read 1 bytes (0 pending)
+< 2025-12-26 12:17:35.460 [Shell] 
+. 2025-12-26 12:17:35.460 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:17:35.461 [Shell] Detected network event
+. 2025-12-26 12:17:35.461 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:17:35.461 [Shell] Received 29 bytes
+. 2025-12-26 12:17:35.461 [Shell] Read 1 bytes (28 pending)
+. 2025-12-26 12:17:35.461 [Shell] Read 28 bytes (0 pending)
+. 2025-12-26 12:17:35.461 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:18:05.631 [Shell] Waiting for data timed out, asking user what to do.
+. 2025-12-26 12:18:05.631 [Shell] Asking user:
+. 2025-12-26 12:18:05.631 [Shell] **30秒内没有连通主机。
+. 2025-12-26 12:18:05.631 [Shell] 
+. 2025-12-26 12:18:05.631 [Shell] 再等30秒？** ()
+< 2025-12-26 12:18:05.631 Script: 主机超过30秒无通信。继续等待...
+< 2025-12-26 12:18:05.631 请注意：如果问题依然出现，尝试关闭'优化连接缓冲大小'。
+< 2025-12-26 12:18:05.631 警告：中止这个操作为关闭连接！
+. 2025-12-26 12:19:06.458 [Shell] Answer: No
+. 2025-12-26 12:19:06.458 [Shell] Attempt to close connection due to fatal exception:
+* 2025-12-26 12:19:06.458 [Shell] **等待服务端应答时发生超时。**
+. 2025-12-26 12:19:06.458 [Shell] Closing connection.
+. 2025-12-26 12:19:06.458 [Shell] Sending special code: 1
+. 2025-12-26 12:19:06.517 [Shell] Detected network event
+. 2025-12-26 12:19:06.519 [Shell] Detected network event
+. 2025-12-26 12:19:06.519 [Shell] Session sent command exit status 0
+. 2025-12-26 12:19:06.519 [Shell] Main session channel closed
+. 2025-12-26 12:19:06.519 [Shell] All channels closed
+< 2025-12-26 12:19:06.528 Script: 等待服务端应答时发生超时。
+< 2025-12-26 12:19:06.528 跳过开始消息时出错。你的Shell可能与本程序不兼容(推荐使用Bash)。
+. 2025-12-26 12:19:06.528 Script: Failed
+. 2025-12-26 12:19:06.528 Session upkeep
+. 2025-12-26 12:19:06.528 Script: Exit code: 1
+. 2025-12-26 12:19:06.528 Script: Max roundtrip: 532
+. 2025-12-26 12:19:06.528 Closing connection.
+. 2025-12-26 12:19:06.528 Sending special code: 1
+. 2025-12-26 12:19:06.546 Detected network event
+. 2025-12-26 12:19:06.549 Detected network event
+. 2025-12-26 12:19:06.549 Session sent command exit status 0
+. 2025-12-26 12:19:06.549 Main session channel closed
+. 2025-12-26 12:19:06.550 All channels closed
+. 2025-12-26 12:25:57.586 --------------------------------------------------------------------------
+. 2025-12-26 12:25:57.586 WinSCP 版本6.5.5 (构建版本 16453 2025-11-19) (OS 10.0.18363 – Windows 10 Pro)
+. 2025-12-26 12:25:57.586 Configuration: HKCU\Software\Martin Prikryl\WinSCP 2\
+. 2025-12-26 12:25:57.587 Log level: Debug 1
+. 2025-12-26 12:25:57.587 Local account: WIN10-0024\admin
+. 2025-12-26 12:25:57.587 Working directory: D:\测试资料\性能监控环境搭建\jmeter-deploy
+. 2025-12-26 12:25:57.587 Process ID: 22428
+. 2025-12-26 12:25:57.601 Ancestor processes: WinSCP, powershell, explorer, ...
+. 2025-12-26 12:25:57.602 Command-line: "D:\测试资料\性能监控环境搭建\jmeter-deploy\tools\WinSCP\WinSCP.exe" /console=6.5.5 /consoleinstance=_21044_942 "/script=C:\Users\admin\AppData\Local\Temp\tmp7212.tmp" "/log=.\check_172.16.125.173.log" "/loglevel=1" "/timeout=30" 
+. 2025-12-26 12:25:57.602 Switch:    /console=6.5.5
+. 2025-12-26 12:25:57.602 Switch:    /consoleinstance=_21044_942
+. 2025-12-26 12:25:57.602 Switch:    /script=C:\Users\admin\AppData\Local\Temp\tmp7212.tmp
+. 2025-12-26 12:25:57.602 Switch:    /log=.\check_172.16.125.173.log
+. 2025-12-26 12:25:57.602 Switch:    /loglevel=1
+. 2025-12-26 12:25:57.602 Switch:    /timeout=30
+. 2025-12-26 12:25:57.602 Time zone: Current: GMT+8 (中国标准时间), No DST
+. 2025-12-26 12:25:57.602 Login time: 2025年12月26日 12:25:57
+. 2025-12-26 12:25:57.602 --------------------------------------------------------------------------
+. 2025-12-26 12:25:57.602 Script: Retrospectively logging previous script records:
+> 2025-12-26 12:25:57.602 Script: open sftp://a:***@172.16.125.173 -hostkey="*" -timeout=30
+> 2025-12-26 12:25:57.602 Script: Parameter: sftp://a:***@172.16.125.173
+> 2025-12-26 12:25:57.602 Script: Switch:    -hostkey=*
+> 2025-12-26 12:25:57.602 Script: Switch:    -timeout=30
+. 2025-12-26 12:25:57.602 --------------------------------------------------------------------------
+. 2025-12-26 12:25:57.602 Session name: a@172.16.125.173 (Ad-Hoc site)
+. 2025-12-26 12:25:57.602 Host name: 172.16.125.173 (Port: 22)
+. 2025-12-26 12:25:57.602 User name: a (Password: Yes, Key file: No, Passphrase: No)
+. 2025-12-26 12:25:57.602 Tunnel: No
+. 2025-12-26 12:25:57.602 Transfer Protocol: SFTP
+. 2025-12-26 12:25:57.602 Ping type: Off, Ping interval: 30 sec; Timeout: 30 sec
+. 2025-12-26 12:25:57.602 Disable Nagle: No
+. 2025-12-26 12:25:57.602 Proxy: None
+. 2025-12-26 12:25:57.602 Send buffer: 262144
+. 2025-12-26 12:25:57.602 Compression: No
+. 2025-12-26 12:25:57.602 Bypass authentication: No
+. 2025-12-26 12:25:57.602 Try agent: Yes; Agent forwarding: No; KI: Yes; GSSAPI: Yes
+. 2025-12-26 12:25:57.602 GSSAPI: KEX: No; Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2025-12-26 12:25:57.602 Ciphers: aes,chacha20,aesgcm,3des,WARN,des,blowfish,arcfour; Ssh2DES: No
+. 2025-12-26 12:25:57.602 KEX: ntru-curve25519,mlkem-curve25519,mlkem-nist,ecdh,dh-gex-sha1,dh-group18-sha512,dh-group17-sha512,dh-group16-sha512,dh-group15-sha512,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2025-12-26 12:25:57.602 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2025-12-26 12:25:57.602 Simple channel: Yes
+. 2025-12-26 12:25:57.602 Return code variable: Autodetect; Lookup user groups: Auto
+. 2025-12-26 12:25:57.602 Shell: default
+. 2025-12-26 12:25:57.602 EOL: LF, UTF: Auto
+. 2025-12-26 12:25:57.602 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2025-12-26 12:25:57.602 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2025-12-26 12:25:57.603 SFTP Bugs: Auto,Auto
+. 2025-12-26 12:25:57.603 SFTP Server: default
+. 2025-12-26 12:25:57.603 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2025-12-26 12:25:57.603 Cache directory changes: Yes, Permanent: Yes
+. 2025-12-26 12:25:57.603 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2025-12-26 12:25:57.603 DST mode: Unix
+. 2025-12-26 12:25:57.603 --------------------------------------------------------------------------
+< 2025-12-26 12:25:57.603 Script: 寻找主机...
+. 2025-12-26 12:25:57.603 Looking up host "172.16.125.173" for SSH connection
+. 2025-12-26 12:25:57.604 Connecting to 172.16.125.173 port 22
+. 2025-12-26 12:25:57.647 Connected to 172.16.125.173 (from 192.168.10.123:56367)
+< 2025-12-26 12:25:57.647 Script: 连接到主机...
+. 2025-12-26 12:25:57.647 Waiting for the server to continue with the initialization
+. 2025-12-26 12:25:57.647 We claim version: SSH-2.0-WinSCP_release_6.5.5
+. 2025-12-26 12:25:57.647 Detected network event
+. 2025-12-26 12:25:57.647 Connected to 172.16.125.173 (from 192.168.10.123:56367)
+. 2025-12-26 12:25:57.765 Detected network event
+. 2025-12-26 12:25:57.765 Waiting for the server to continue with the initialization
+. 2025-12-26 12:25:57.765 Remote version: SSH-2.0-OpenSSH_for_Windows_9.5
+. 2025-12-26 12:25:57.765 Using SSH protocol version 2
+. 2025-12-26 12:25:57.766 Have a known host key of type ssh-ed25519
+. 2025-12-26 12:25:57.885 Detected network event
+. 2025-12-26 12:25:57.886 Waiting for the server to continue with the initialization
+. 2025-12-26 12:25:57.886 Enabling strict key exchange semantics
+. 2025-12-26 12:25:57.887 Doing ECDH key exchange with curve Curve25519, using hash SHA-256
+. 2025-12-26 12:25:57.908 Detected network event
+. 2025-12-26 12:25:57.908 Waiting for the server to continue with the initialization
+. 2025-12-26 12:25:57.954 Server also has ecdsa-sha2-nistp256/rsa-sha2-512/rsa-sha2-256 host keys, but we don't know any of them
+. 2025-12-26 12:25:57.955 Host key fingerprint is:
+. 2025-12-26 12:25:57.955 ssh-ed25519 255 SHA256:zZaaNDrfO2wvz4/49ceEw2YSLl1QITM3RLOvFc+1Hn0
+. 2025-12-26 12:25:57.955 Verifying host key ssh-ed25519 0x62cc5b36a873c218 12980e344ba2b92f a44622c5e607b852 19ea4e4452154086 ,0x64ee115895856fa4 86e47767c83bfc83 3e7426229df7bb5b e6864e4cd7567015  with fingerprints ssh-ed25519 255 SHA256:zZaaNDrfO2wvz4/49ceEw2YSLl1QITM3RLOvFc+1Hn0, ssh-ed25519 255 85:c5:e8:70:f4:b0:8d:71:b7:ad:64:0b:f0:e9:9e:67
+< 2025-12-26 12:25:57.955 Script: 正在验证...
+. 2025-12-26 12:25:57.955 Host key does not match cached key 0x51d4845775a2fb3a e68b972b2703ba46 289d343be537c60b a1586506ca228e15 ,0x292e42e515f90b13 892acf1794740097 ccc2a6d7665fc2fa 91039f312303183f 
+. 2025-12-26 12:25:57.955 Host key matches cached key
+. 2025-12-26 12:25:57.956 Initialised AES-256 SDCTR (unaccelerated) [aes256-ctr] outbound encryption
+. 2025-12-26 12:25:57.956 Initialised HMAC-SHA-256 outbound MAC algorithm
+. 2025-12-26 12:25:57.956 Initialised AES-256 SDCTR (unaccelerated) [aes256-ctr] inbound encryption
+. 2025-12-26 12:25:57.956 Initialised HMAC-SHA-256 inbound MAC algorithm
+. 2025-12-26 12:25:57.959 Detected network event
+. 2025-12-26 12:25:57.959 Waiting for the server to continue with the initialization
+! 2025-12-26 12:25:57.960 Using username "a".
+< 2025-12-26 12:25:57.960 Script: 使用用户名 "a"。
+. 2025-12-26 12:25:57.977 Detected network event
+. 2025-12-26 12:25:57.977 Waiting for the server to continue with the initialization
+. 2025-12-26 12:25:57.978 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2025-12-26 12:25:57.978 Attempting keyboard-interactive authentication
+. 2025-12-26 12:25:57.991 Detected network event
+. 2025-12-26 12:25:57.991 Waiting for the server to continue with the initialization
+. 2025-12-26 12:25:57.991 Server refused keyboard-interactive authentication
+. 2025-12-26 12:25:57.991 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2025-12-26 12:25:57.992 Prompt (password, "SSH password", <no instructions>, "密码(&P)：")
+. 2025-12-26 12:25:57.992 Using stored password.
+< 2025-12-26 12:25:57.992 Script: 以预置密码进行验证。
+. 2025-12-26 12:25:57.992 Sent password
+. 2025-12-26 12:25:58.038 Detected network event
+. 2025-12-26 12:25:58.038 Waiting for the server to continue with the initialization
+. 2025-12-26 12:25:58.038 Access granted
+. 2025-12-26 12:25:58.039 Opening main session channel
+. 2025-12-26 12:25:58.153 Detected network event
+. 2025-12-26 12:25:58.153 Waiting for the server to continue with the initialization
+. 2025-12-26 12:25:58.197 Detected network event
+. 2025-12-26 12:25:58.197 Waiting for the server to continue with the initialization
+. 2025-12-26 12:25:58.197 Opened main channel
+. 2025-12-26 12:25:58.230 Detected network event
+. 2025-12-26 12:25:58.230 Waiting for the server to continue with the initialization
+. 2025-12-26 12:25:58.230 Started a shell/command
+< 2025-12-26 12:25:58.230 Script: 已验证。
+. 2025-12-26 12:25:58.230 --------------------------------------------------------------------------
+. 2025-12-26 12:25:58.230 Using SFTP protocol.
+. 2025-12-26 12:25:58.230 Doing startup conversation with host.
+< 2025-12-26 12:25:58.230 Script: 正在开始会话...
+. 2025-12-26 12:25:58.231 Well known server, allowing SFTP version 6.
+> 2025-12-26 12:25:58.231 Type: SSH_FXP_INIT, Size: 5, Number: -1
+. 2025-12-26 12:25:58.231 Sent 9 bytes
+. 2025-12-26 12:25:58.231 There are 0 bytes remaining in the send buffer
+. 2025-12-26 12:25:58.231 Waiting for another 4 bytes
+. 2025-12-26 12:25:58.362 Detected network event
+. 2025-12-26 12:25:58.362 Waiting for another 4 bytes
+. 2025-12-26 12:25:58.362 Received 254 bytes
+. 2025-12-26 12:25:58.362 Read 4 bytes (250 pending)
+. 2025-12-26 12:25:58.362 Read 250 bytes (0 pending)
+< 2025-12-26 12:25:58.362 Type: SSH_FXP_VERSION, Size: 250, Number: -1
+. 2025-12-26 12:25:58.362 SFTP version 3 negotiated.
+. 2025-12-26 12:25:58.362 Supports extension posix-rename@openssh.com="1"
+. 2025-12-26 12:25:58.362 Supports statvfs@openssh.com extension version 2
+. 2025-12-26 12:25:58.362 Supports hardlink@openssh.com extension version 1
+. 2025-12-26 12:25:58.362 Unknown server extension fsync@openssh.com="1"
+. 2025-12-26 12:25:58.362 Unknown server extension lsetstat@openssh.com="1"
+. 2025-12-26 12:25:58.362 Supports limits@openssh.com extension version 1
+. 2025-12-26 12:25:58.362 Unknown server extension expand-path@openssh.com="1"
+. 2025-12-26 12:25:58.362 Supports extension copy-data="1"
+. 2025-12-26 12:25:58.362 Unknown server extension home-directory="1"
+. 2025-12-26 12:25:58.362 We believe the server has signed timestamps bug
+. 2025-12-26 12:25:58.362 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+> 2025-12-26 12:25:58.362 Type: SSH_FXP_EXTENDED, Size: 27, Number: 200
+. 2025-12-26 12:25:58.362 Sent 31 bytes
+. 2025-12-26 12:25:58.362 There are 0 bytes remaining in the send buffer
+. 2025-12-26 12:25:58.362 Waiting for another 4 bytes
+. 2025-12-26 12:25:58.365 Detected network event
+. 2025-12-26 12:25:58.365 Waiting for another 4 bytes
+. 2025-12-26 12:25:58.365 Received 41 bytes
+. 2025-12-26 12:25:58.365 Read 4 bytes (37 pending)
+. 2025-12-26 12:25:58.365 Read 37 bytes (0 pending)
+< 2025-12-26 12:25:58.365 Type: SSH_FXP_EXTENDED_REPLY, Size: 37, Number: 200
+. 2025-12-26 12:25:58.365 Limiting packet size to server's limit of 262144 + 4 bytes
+. 2025-12-26 12:25:58.365 Getting current directory name.
+. 2025-12-26 12:25:58.365 Getting real path for '.'
+> 2025-12-26 12:25:58.365 Type: SSH_FXP_REALPATH, Size: 10, Number: 272
+. 2025-12-26 12:25:58.365 Sent 14 bytes
+. 2025-12-26 12:25:58.365 There are 0 bytes remaining in the send buffer
+. 2025-12-26 12:25:58.365 Waiting for another 4 bytes
+. 2025-12-26 12:25:58.368 Detected network event
+. 2025-12-26 12:25:58.368 Waiting for another 4 bytes
+. 2025-12-26 12:25:58.368 Received 47 bytes
+. 2025-12-26 12:25:58.368 Read 4 bytes (43 pending)
+. 2025-12-26 12:25:58.368 Read 43 bytes (0 pending)
+< 2025-12-26 12:25:58.368 Type: SSH_FXP_NAME, Size: 43, Number: 272
+. 2025-12-26 12:25:58.368 Real path is '/C:/Users/a'
+. 2025-12-26 12:25:58.368 Startup conversation with host finished.
+< 2025-12-26 12:25:58.368 Script: 会话已开始。
+< 2025-12-26 12:25:58.368 Script: 活动的会话：[1] a@172.16.125.173
+. 2025-12-26 12:25:58.368 Session upkeep
+> 2025-12-26 12:25:58.369 Script: call powershell -Command "Get-Process -Name java -ErrorAction SilentlyContinue | Where-Object { $_.CommandLine -like '*jmeter-server*' } | Select-Object Id, ProcessName"
+> 2025-12-26 12:25:58.369 Script: Parameter: powershell
+> 2025-12-26 12:25:58.369 Script: Switch:    -Command
+> 2025-12-26 12:25:58.369 Script: Parameter: Get-Process -Name java -ErrorAction SilentlyContinue | Where-Object { $_.CommandLine -like '*jmeter-server*' } | Select-Object Id, ProcessName
+< 2025-12-26 12:25:58.369 [Shell] Script: 寻找主机...
+. 2025-12-26 12:25:58.370 [Shell] Looking up host "172.16.125.173" for SSH connection
+. 2025-12-26 12:25:58.370 [Shell] Connecting to 172.16.125.173 port 22
+. 2025-12-26 12:25:58.373 [Shell] Connected to 172.16.125.173 (from 192.168.10.123:56377)
+< 2025-12-26 12:25:58.373 [Shell] Script: 连接到主机...
+. 2025-12-26 12:25:58.373 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:25:58.374 [Shell] We claim version: SSH-2.0-WinSCP_release_6.5.5
+. 2025-12-26 12:25:58.374 [Shell] Detected network event
+. 2025-12-26 12:25:58.374 [Shell] Connected to 172.16.125.173 (from 192.168.10.123:56377)
+. 2025-12-26 12:25:58.479 [Shell] Detected network event
+. 2025-12-26 12:25:58.479 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:25:58.479 [Shell] Remote version: SSH-2.0-OpenSSH_for_Windows_9.5
+. 2025-12-26 12:25:58.479 [Shell] Using SSH protocol version 2
+. 2025-12-26 12:25:58.480 [Shell] Have a known host key of type ssh-ed25519
+. 2025-12-26 12:25:58.581 [Shell] Detected network event
+. 2025-12-26 12:25:58.581 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:25:58.581 [Shell] Enabling strict key exchange semantics
+. 2025-12-26 12:25:58.581 [Shell] Doing ECDH key exchange with curve Curve25519, using hash SHA-256
+. 2025-12-26 12:25:58.603 [Shell] Detected network event
+. 2025-12-26 12:25:58.603 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:25:58.647 [Shell] Server also has ecdsa-sha2-nistp256/rsa-sha2-512/rsa-sha2-256 host keys, but we don't know any of them
+. 2025-12-26 12:25:58.648 [Shell] Host key fingerprint is:
+. 2025-12-26 12:25:58.648 [Shell] ssh-ed25519 255 SHA256:zZaaNDrfO2wvz4/49ceEw2YSLl1QITM3RLOvFc+1Hn0
+. 2025-12-26 12:25:58.648 [Shell] Verifying host key ssh-ed25519 0x62cc5b36a873c218 12980e344ba2b92f a44622c5e607b852 19ea4e4452154086 ,0x64ee115895856fa4 86e47767c83bfc83 3e7426229df7bb5b e6864e4cd7567015  with fingerprints ssh-ed25519 255 SHA256:zZaaNDrfO2wvz4/49ceEw2YSLl1QITM3RLOvFc+1Hn0, ssh-ed25519 255 85:c5:e8:70:f4:b0:8d:71:b7:ad:64:0b:f0:e9:9e:67
+< 2025-12-26 12:25:58.648 [Shell] Script: 正在验证...
+. 2025-12-26 12:25:58.648 [Shell] Host key does not match cached key 0x51d4845775a2fb3a e68b972b2703ba46 289d343be537c60b a1586506ca228e15 ,0x292e42e515f90b13 892acf1794740097 ccc2a6d7665fc2fa 91039f312303183f 
+. 2025-12-26 12:25:58.648 [Shell] Host key matches cached key
+. 2025-12-26 12:25:58.649 [Shell] Initialised AES-256 SDCTR (unaccelerated) [aes256-ctr] outbound encryption
+. 2025-12-26 12:25:58.649 [Shell] Initialised HMAC-SHA-256 outbound MAC algorithm
+. 2025-12-26 12:25:58.649 [Shell] Initialised AES-256 SDCTR (unaccelerated) [aes256-ctr] inbound encryption
+. 2025-12-26 12:25:58.649 [Shell] Initialised HMAC-SHA-256 inbound MAC algorithm
+. 2025-12-26 12:25:58.653 [Shell] Detected network event
+. 2025-12-26 12:25:58.653 [Shell] Waiting for the server to continue with the initialization
+! 2025-12-26 12:25:58.653 [Shell] Using username "a".
+< 2025-12-26 12:25:58.653 [Shell] Script: 使用用户名 "a"。
+. 2025-12-26 12:25:58.671 [Shell] Detected network event
+. 2025-12-26 12:25:58.671 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:25:58.671 [Shell] Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2025-12-26 12:25:58.671 [Shell] Attempting keyboard-interactive authentication
+. 2025-12-26 12:25:58.677 [Shell] Detected network event
+. 2025-12-26 12:25:58.677 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:25:58.677 [Shell] Server refused keyboard-interactive authentication
+. 2025-12-26 12:25:58.677 [Shell] Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2025-12-26 12:25:58.677 [Shell] Prompt (password, "SSH password", <no instructions>, "密码(&P)：")
+. 2025-12-26 12:25:58.677 [Shell] Using stored password.
+< 2025-12-26 12:25:58.677 [Shell] Script: 以预置密码进行验证。
+. 2025-12-26 12:25:58.677 [Shell] Sent password
+. 2025-12-26 12:25:58.725 [Shell] Detected network event
+. 2025-12-26 12:25:58.725 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:25:58.725 [Shell] Access granted
+. 2025-12-26 12:25:58.725 [Shell] Opening main session channel
+. 2025-12-26 12:25:58.839 [Shell] Detected network event
+. 2025-12-26 12:25:58.839 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:25:58.881 [Shell] Detected network event
+. 2025-12-26 12:25:58.881 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:25:58.881 [Shell] Opened main channel
+. 2025-12-26 12:25:58.909 [Shell] Detected network event
+. 2025-12-26 12:25:58.909 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:25:58.909 [Shell] Started a shell/command
+< 2025-12-26 12:25:58.909 [Shell] Script: 已验证。
+. 2025-12-26 12:25:58.909 [Shell] --------------------------------------------------------------------------
+. 2025-12-26 12:25:58.909 [Shell] Using SCP protocol.
+. 2025-12-26 12:25:58.909 [Shell] Doing startup conversation with host.
+< 2025-12-26 12:25:58.909 [Shell] Script: 正在开始会话...
+. 2025-12-26 12:25:58.909 [Shell] Skipping host startup message (if any).
+> 2025-12-26 12:25:58.909 [Shell] echo "WinSCP: this is end-of-file:0"
+. 2025-12-26 12:25:58.909 [Shell] Sent 37 bytes
+. 2025-12-26 12:25:58.909 [Shell] There are 0 bytes remaining in the send buffer
+. 2025-12-26 12:25:58.909 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:25:59.004 [Shell] Detected network event
+. 2025-12-26 12:25:59.004 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:25:59.004 [Shell] Received 40 bytes
+. 2025-12-26 12:25:59.004 [Shell] Read 1 bytes (39 pending)
+. 2025-12-26 12:25:59.004 [Shell] Read 39 bytes (0 pending)
+. 2025-12-26 12:25:59.004 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:25:59.004 [Shell] Detected network event
+. 2025-12-26 12:25:59.004 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:25:59.004 [Shell] Received 45 bytes
+. 2025-12-26 12:25:59.004 [Shell] Read 1 bytes (44 pending)
+. 2025-12-26 12:25:59.004 [Shell] Read 1 bytes (43 pending)
+< 2025-12-26 12:25:59.004 [Shell] Microsoft Windows [版本 10.0.26200.7462]
+. 2025-12-26 12:25:59.004 [Shell] Read 43 bytes (0 pending)
+< 2025-12-26 12:25:59.004 [Shell] (c) Microsoft Corporation。保留所有权利。
+. 2025-12-26 12:25:59.004 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:25:59.004 [Shell] Detected network event
+. 2025-12-26 12:25:59.004 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:25:59.004 [Shell] Received 31 bytes
+. 2025-12-26 12:25:59.004 [Shell] Read 1 bytes (30 pending)
+. 2025-12-26 12:25:59.004 [Shell] Read 1 bytes (29 pending)
+< 2025-12-26 12:25:59.004 [Shell] 
+. 2025-12-26 12:25:59.004 [Shell] Read 29 bytes (0 pending)
+. 2025-12-26 12:25:59.004 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:25:59.005 [Shell] Detected network event
+. 2025-12-26 12:25:59.005 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:25:59.005 [Shell] Received 37 bytes
+. 2025-12-26 12:25:59.005 [Shell] Read 1 bytes (36 pending)
+. 2025-12-26 12:25:59.005 [Shell] Read 36 bytes (0 pending)
+< 2025-12-26 12:25:59.005 [Shell] a@DESKTOP-0A06EDQ C:\Users\a>echo "WinSCP: this is end-of-file:0"
+. 2025-12-26 12:25:59.005 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:25:59.005 [Shell] Detected network event
+. 2025-12-26 12:25:59.005 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:25:59.005 [Shell] Detected network event
+. 2025-12-26 12:25:59.005 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:25:59.005 [Shell] Received 33 bytes
+. 2025-12-26 12:25:59.005 [Shell] Read 1 bytes (32 pending)
+. 2025-12-26 12:25:59.005 [Shell] Read 32 bytes (0 pending)
+< 2025-12-26 12:25:59.005 [Shell] "WinSCP: this is end-of-file:0"
+. 2025-12-26 12:25:59.005 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:25:59.005 [Shell] Received 2 bytes
+. 2025-12-26 12:25:59.005 [Shell] Read 1 bytes (1 pending)
+. 2025-12-26 12:25:59.005 [Shell] Read 1 bytes (0 pending)
+< 2025-12-26 12:25:59.005 [Shell] 
+. 2025-12-26 12:25:59.005 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:25:59.006 [Shell] Detected network event
+. 2025-12-26 12:25:59.006 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:25:59.006 [Shell] Received 29 bytes
+. 2025-12-26 12:25:59.006 [Shell] Read 1 bytes (28 pending)
+. 2025-12-26 12:25:59.006 [Shell] Read 28 bytes (0 pending)
+. 2025-12-26 12:25:59.006 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:26:29.177 [Shell] Waiting for data timed out, asking user what to do.
+. 2025-12-26 12:26:29.177 [Shell] Asking user:
+. 2025-12-26 12:26:29.177 [Shell] **30秒内没有连通主机。
+. 2025-12-26 12:26:29.177 [Shell] 
+. 2025-12-26 12:26:29.177 [Shell] 再等30秒？** ()
+< 2025-12-26 12:26:29.177 Script: 主机超过30秒无通信。继续等待...
+< 2025-12-26 12:26:29.177 请注意：如果问题依然出现，尝试关闭'优化连接缓冲大小'。
+< 2025-12-26 12:26:29.177 警告：中止这个操作为关闭连接！
+. 2025-12-26 12:27:29.908 [Shell] Answer: No
+. 2025-12-26 12:27:29.908 [Shell] Attempt to close connection due to fatal exception:
+* 2025-12-26 12:27:29.908 [Shell] **等待服务端应答时发生超时。**
+. 2025-12-26 12:27:29.908 [Shell] Closing connection.
+. 2025-12-26 12:27:29.908 [Shell] Sending special code: 1
+. 2025-12-26 12:27:30.023 [Shell] Detected network event
+. 2025-12-26 12:27:30.023 [Shell] Session sent command exit status 0
+. 2025-12-26 12:27:30.023 [Shell] Main session channel closed
+. 2025-12-26 12:27:30.023 [Shell] All channels closed
+< 2025-12-26 12:27:30.031 Script: 等待服务端应答时发生超时。
+< 2025-12-26 12:27:30.031 跳过开始消息时出错。你的Shell可能与本程序不兼容(推荐使用Bash)。
+. 2025-12-26 12:27:30.032 Script: Failed
+. 2025-12-26 12:27:30.032 Session upkeep
+. 2025-12-26 12:27:30.032 Script: Exit code: 1
+. 2025-12-26 12:27:30.032 Script: Max roundtrip: 532
+. 2025-12-26 12:27:30.032 Closing connection.
+. 2025-12-26 12:27:30.032 Sending special code: 1
+. 2025-12-26 12:27:30.051 Detected network event
+. 2025-12-26 12:27:30.055 Detected network event
+. 2025-12-26 12:27:30.055 Session sent command exit status 0
+. 2025-12-26 12:27:30.055 Main session channel closed
+. 2025-12-26 12:27:30.055 All channels closed
+. 2025-12-26 12:33:14.489 --------------------------------------------------------------------------
+. 2025-12-26 12:33:14.489 WinSCP 版本6.5.5 (构建版本 16453 2025-11-19) (OS 10.0.18363 – Windows 10 Pro)
+. 2025-12-26 12:33:14.489 Configuration: HKCU\Software\Martin Prikryl\WinSCP 2\
+. 2025-12-26 12:33:14.489 Log level: Debug 1
+. 2025-12-26 12:33:14.489 Local account: WIN10-0024\admin
+. 2025-12-26 12:33:14.489 Working directory: D:\测试资料\性能监控环境搭建\jmeter-deploy
+. 2025-12-26 12:33:14.489 Process ID: 17736
+. 2025-12-26 12:33:14.505 Ancestor processes: WinSCP, powershell, explorer, ...
+. 2025-12-26 12:33:14.505 Command-line: "D:\测试资料\性能监控环境搭建\jmeter-deploy\tools\WinSCP\WinSCP.exe" /console=6.5.5 /consoleinstance=_22092_827 "/script=C:\Users\admin\AppData\Local\Temp\tmp1D0F.tmp" "/log=.\check_172.16.125.173.log" "/loglevel=1" "/timeout=30" 
+. 2025-12-26 12:33:14.505 Switch:    /console=6.5.5
+. 2025-12-26 12:33:14.505 Switch:    /consoleinstance=_22092_827
+. 2025-12-26 12:33:14.505 Switch:    /script=C:\Users\admin\AppData\Local\Temp\tmp1D0F.tmp
+. 2025-12-26 12:33:14.505 Switch:    /log=.\check_172.16.125.173.log
+. 2025-12-26 12:33:14.505 Switch:    /loglevel=1
+. 2025-12-26 12:33:14.505 Switch:    /timeout=30
+. 2025-12-26 12:33:14.505 Time zone: Current: GMT+8 (中国标准时间), No DST
+. 2025-12-26 12:33:14.506 Login time: 2025年12月26日 12:33:14
+. 2025-12-26 12:33:14.506 --------------------------------------------------------------------------
+. 2025-12-26 12:33:14.506 Script: Retrospectively logging previous script records:
+> 2025-12-26 12:33:14.506 Script: open sftp://a:***@172.16.125.173 -hostkey="*" -timeout=30
+> 2025-12-26 12:33:14.506 Script: Parameter: sftp://a:***@172.16.125.173
+> 2025-12-26 12:33:14.506 Script: Switch:    -hostkey=*
+> 2025-12-26 12:33:14.506 Script: Switch:    -timeout=30
+. 2025-12-26 12:33:14.506 --------------------------------------------------------------------------
+. 2025-12-26 12:33:14.506 Session name: a@172.16.125.173 (Ad-Hoc site)
+. 2025-12-26 12:33:14.506 Host name: 172.16.125.173 (Port: 22)
+. 2025-12-26 12:33:14.506 User name: a (Password: Yes, Key file: No, Passphrase: No)
+. 2025-12-26 12:33:14.506 Tunnel: No
+. 2025-12-26 12:33:14.506 Transfer Protocol: SFTP
+. 2025-12-26 12:33:14.506 Ping type: Off, Ping interval: 30 sec; Timeout: 30 sec
+. 2025-12-26 12:33:14.506 Disable Nagle: No
+. 2025-12-26 12:33:14.506 Proxy: None
+. 2025-12-26 12:33:14.506 Send buffer: 262144
+. 2025-12-26 12:33:14.506 Compression: No
+. 2025-12-26 12:33:14.506 Bypass authentication: No
+. 2025-12-26 12:33:14.506 Try agent: Yes; Agent forwarding: No; KI: Yes; GSSAPI: Yes
+. 2025-12-26 12:33:14.506 GSSAPI: KEX: No; Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2025-12-26 12:33:14.506 Ciphers: aes,chacha20,aesgcm,3des,WARN,des,blowfish,arcfour; Ssh2DES: No
+. 2025-12-26 12:33:14.506 KEX: ntru-curve25519,mlkem-curve25519,mlkem-nist,ecdh,dh-gex-sha1,dh-group18-sha512,dh-group17-sha512,dh-group16-sha512,dh-group15-sha512,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2025-12-26 12:33:14.506 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2025-12-26 12:33:14.506 Simple channel: Yes
+. 2025-12-26 12:33:14.506 Return code variable: Autodetect; Lookup user groups: Auto
+. 2025-12-26 12:33:14.506 Shell: default
+. 2025-12-26 12:33:14.506 EOL: LF, UTF: Auto
+. 2025-12-26 12:33:14.506 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2025-12-26 12:33:14.506 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2025-12-26 12:33:14.506 SFTP Bugs: Auto,Auto
+. 2025-12-26 12:33:14.506 SFTP Server: default
+. 2025-12-26 12:33:14.506 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2025-12-26 12:33:14.506 Cache directory changes: Yes, Permanent: Yes
+. 2025-12-26 12:33:14.506 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2025-12-26 12:33:14.506 DST mode: Unix
+. 2025-12-26 12:33:14.506 --------------------------------------------------------------------------
+< 2025-12-26 12:33:14.506 Script: 寻找主机...
+. 2025-12-26 12:33:14.507 Looking up host "172.16.125.173" for SSH connection
+. 2025-12-26 12:33:14.508 Connecting to 172.16.125.173 port 22
+. 2025-12-26 12:33:14.512 Connected to 172.16.125.173 (from 192.168.10.123:56588)
+< 2025-12-26 12:33:14.512 Script: 连接到主机...
+. 2025-12-26 12:33:14.513 Waiting for the server to continue with the initialization
+. 2025-12-26 12:33:14.513 We claim version: SSH-2.0-WinSCP_release_6.5.5
+. 2025-12-26 12:33:14.513 Detected network event
+. 2025-12-26 12:33:14.513 Connected to 172.16.125.173 (from 192.168.10.123:56588)
+. 2025-12-26 12:33:14.644 Detected network event
+. 2025-12-26 12:33:14.644 Waiting for the server to continue with the initialization
+. 2025-12-26 12:33:14.644 Remote version: SSH-2.0-OpenSSH_for_Windows_9.5
+. 2025-12-26 12:33:14.644 Using SSH protocol version 2
+. 2025-12-26 12:33:14.645 Have a known host key of type ssh-ed25519
+. 2025-12-26 12:33:14.781 Detected network event
+. 2025-12-26 12:33:14.781 Waiting for the server to continue with the initialization
+. 2025-12-26 12:33:14.781 Enabling strict key exchange semantics
+. 2025-12-26 12:33:14.782 Doing ECDH key exchange with curve Curve25519, using hash SHA-256
+. 2025-12-26 12:33:14.808 Detected network event
+. 2025-12-26 12:33:14.808 Waiting for the server to continue with the initialization
+. 2025-12-26 12:33:14.855 Server also has ecdsa-sha2-nistp256/rsa-sha2-512/rsa-sha2-256 host keys, but we don't know any of them
+. 2025-12-26 12:33:14.855 Host key fingerprint is:
+. 2025-12-26 12:33:14.855 ssh-ed25519 255 SHA256:zZaaNDrfO2wvz4/49ceEw2YSLl1QITM3RLOvFc+1Hn0
+. 2025-12-26 12:33:14.856 Verifying host key ssh-ed25519 0x62cc5b36a873c218 12980e344ba2b92f a44622c5e607b852 19ea4e4452154086 ,0x64ee115895856fa4 86e47767c83bfc83 3e7426229df7bb5b e6864e4cd7567015  with fingerprints ssh-ed25519 255 SHA256:zZaaNDrfO2wvz4/49ceEw2YSLl1QITM3RLOvFc+1Hn0, ssh-ed25519 255 85:c5:e8:70:f4:b0:8d:71:b7:ad:64:0b:f0:e9:9e:67
+< 2025-12-26 12:33:14.856 Script: 正在验证...
+. 2025-12-26 12:33:14.856 Host key does not match cached key 0x51d4845775a2fb3a e68b972b2703ba46 289d343be537c60b a1586506ca228e15 ,0x292e42e515f90b13 892acf1794740097 ccc2a6d7665fc2fa 91039f312303183f 
+. 2025-12-26 12:33:14.856 Host key matches cached key
+. 2025-12-26 12:33:14.856 Initialised AES-256 SDCTR (unaccelerated) [aes256-ctr] outbound encryption
+. 2025-12-26 12:33:14.856 Initialised HMAC-SHA-256 outbound MAC algorithm
+. 2025-12-26 12:33:14.856 Initialised AES-256 SDCTR (unaccelerated) [aes256-ctr] inbound encryption
+. 2025-12-26 12:33:14.856 Initialised HMAC-SHA-256 inbound MAC algorithm
+. 2025-12-26 12:33:14.860 Detected network event
+. 2025-12-26 12:33:14.860 Waiting for the server to continue with the initialization
+! 2025-12-26 12:33:14.861 Using username "a".
+< 2025-12-26 12:33:14.861 Script: 使用用户名 "a"。
+. 2025-12-26 12:33:14.880 Detected network event
+. 2025-12-26 12:33:14.880 Waiting for the server to continue with the initialization
+. 2025-12-26 12:33:14.880 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2025-12-26 12:33:14.880 Attempting keyboard-interactive authentication
+. 2025-12-26 12:33:14.891 Detected network event
+. 2025-12-26 12:33:14.891 Waiting for the server to continue with the initialization
+. 2025-12-26 12:33:14.891 Server refused keyboard-interactive authentication
+. 2025-12-26 12:33:14.891 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2025-12-26 12:33:14.891 Prompt (password, "SSH password", <no instructions>, "密码(&P)：")
+. 2025-12-26 12:33:14.891 Using stored password.
+< 2025-12-26 12:33:14.891 Script: 以预置密码进行验证。
+. 2025-12-26 12:33:14.891 Sent password
+. 2025-12-26 12:33:14.938 Detected network event
+. 2025-12-26 12:33:14.938 Waiting for the server to continue with the initialization
+. 2025-12-26 12:33:14.938 Access granted
+. 2025-12-26 12:33:14.938 Opening main session channel
+. 2025-12-26 12:33:15.052 Detected network event
+. 2025-12-26 12:33:15.052 Waiting for the server to continue with the initialization
+. 2025-12-26 12:33:15.095 Detected network event
+. 2025-12-26 12:33:15.095 Waiting for the server to continue with the initialization
+. 2025-12-26 12:33:15.095 Opened main channel
+. 2025-12-26 12:33:15.126 Detected network event
+. 2025-12-26 12:33:15.126 Waiting for the server to continue with the initialization
+. 2025-12-26 12:33:15.126 Started a shell/command
+< 2025-12-26 12:33:15.126 Script: 已验证。
+. 2025-12-26 12:33:15.126 --------------------------------------------------------------------------
+. 2025-12-26 12:33:15.126 Using SFTP protocol.
+. 2025-12-26 12:33:15.127 Doing startup conversation with host.
+< 2025-12-26 12:33:15.127 Script: 正在开始会话...
+. 2025-12-26 12:33:15.127 Well known server, allowing SFTP version 6.
+> 2025-12-26 12:33:15.127 Type: SSH_FXP_INIT, Size: 5, Number: -1
+. 2025-12-26 12:33:15.127 Sent 9 bytes
+. 2025-12-26 12:33:15.127 There are 0 bytes remaining in the send buffer
+. 2025-12-26 12:33:15.127 Waiting for another 4 bytes
+. 2025-12-26 12:33:15.257 Detected network event
+. 2025-12-26 12:33:15.257 Waiting for another 4 bytes
+. 2025-12-26 12:33:15.257 Received 254 bytes
+. 2025-12-26 12:33:15.257 Read 4 bytes (250 pending)
+. 2025-12-26 12:33:15.257 Read 250 bytes (0 pending)
+< 2025-12-26 12:33:15.257 Type: SSH_FXP_VERSION, Size: 250, Number: -1
+. 2025-12-26 12:33:15.257 SFTP version 3 negotiated.
+. 2025-12-26 12:33:15.257 Supports extension posix-rename@openssh.com="1"
+. 2025-12-26 12:33:15.257 Supports statvfs@openssh.com extension version 2
+. 2025-12-26 12:33:15.257 Supports hardlink@openssh.com extension version 1
+. 2025-12-26 12:33:15.257 Unknown server extension fsync@openssh.com="1"
+. 2025-12-26 12:33:15.257 Unknown server extension lsetstat@openssh.com="1"
+. 2025-12-26 12:33:15.257 Supports limits@openssh.com extension version 1
+. 2025-12-26 12:33:15.257 Unknown server extension expand-path@openssh.com="1"
+. 2025-12-26 12:33:15.257 Supports extension copy-data="1"
+. 2025-12-26 12:33:15.257 Unknown server extension home-directory="1"
+. 2025-12-26 12:33:15.257 We believe the server has signed timestamps bug
+. 2025-12-26 12:33:15.257 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+> 2025-12-26 12:33:15.257 Type: SSH_FXP_EXTENDED, Size: 27, Number: 200
+. 2025-12-26 12:33:15.257 Sent 31 bytes
+. 2025-12-26 12:33:15.257 There are 0 bytes remaining in the send buffer
+. 2025-12-26 12:33:15.257 Waiting for another 4 bytes
+. 2025-12-26 12:33:15.261 Detected network event
+. 2025-12-26 12:33:15.261 Waiting for another 4 bytes
+. 2025-12-26 12:33:15.261 Received 41 bytes
+. 2025-12-26 12:33:15.261 Read 4 bytes (37 pending)
+. 2025-12-26 12:33:15.261 Read 37 bytes (0 pending)
+< 2025-12-26 12:33:15.261 Type: SSH_FXP_EXTENDED_REPLY, Size: 37, Number: 200
+. 2025-12-26 12:33:15.261 Limiting packet size to server's limit of 262144 + 4 bytes
+. 2025-12-26 12:33:15.261 Getting current directory name.
+. 2025-12-26 12:33:15.261 Getting real path for '.'
+> 2025-12-26 12:33:15.261 Type: SSH_FXP_REALPATH, Size: 10, Number: 272
+. 2025-12-26 12:33:15.261 Sent 14 bytes
+. 2025-12-26 12:33:15.261 There are 0 bytes remaining in the send buffer
+. 2025-12-26 12:33:15.261 Waiting for another 4 bytes
+. 2025-12-26 12:33:15.264 Detected network event
+. 2025-12-26 12:33:15.264 Waiting for another 4 bytes
+. 2025-12-26 12:33:15.264 Received 47 bytes
+. 2025-12-26 12:33:15.264 Read 4 bytes (43 pending)
+. 2025-12-26 12:33:15.264 Read 43 bytes (0 pending)
+< 2025-12-26 12:33:15.264 Type: SSH_FXP_NAME, Size: 43, Number: 272
+. 2025-12-26 12:33:15.265 Real path is '/C:/Users/a'
+. 2025-12-26 12:33:15.265 Startup conversation with host finished.
+< 2025-12-26 12:33:15.265 Script: 会话已开始。
+< 2025-12-26 12:33:15.265 Script: 活动的会话：[1] a@172.16.125.173
+. 2025-12-26 12:33:15.265 Session upkeep
+> 2025-12-26 12:33:15.265 Script: call powershell -Command "Get-Process -Name java -ErrorAction SilentlyContinue | Where-Object { $_.CommandLine -like '*jmeter-server*' } | Select-Object Id, ProcessName"
+> 2025-12-26 12:33:15.265 Script: Parameter: powershell
+> 2025-12-26 12:33:15.265 Script: Switch:    -Command
+> 2025-12-26 12:33:15.265 Script: Parameter: Get-Process -Name java -ErrorAction SilentlyContinue | Where-Object { $_.CommandLine -like '*jmeter-server*' } | Select-Object Id, ProcessName
+< 2025-12-26 12:33:15.266 [Shell] Script: 寻找主机...
+. 2025-12-26 12:33:15.266 [Shell] Looking up host "172.16.125.173" for SSH connection
+. 2025-12-26 12:33:15.266 [Shell] Connecting to 172.16.125.173 port 22
+. 2025-12-26 12:33:15.270 [Shell] Connected to 172.16.125.173 (from 192.168.10.123:56589)
+< 2025-12-26 12:33:15.270 [Shell] Script: 连接到主机...
+. 2025-12-26 12:33:15.270 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:33:15.270 [Shell] We claim version: SSH-2.0-WinSCP_release_6.5.5
+. 2025-12-26 12:33:15.270 [Shell] Detected network event
+. 2025-12-26 12:33:15.270 [Shell] Connected to 172.16.125.173 (from 192.168.10.123:56589)
+. 2025-12-26 12:33:15.372 [Shell] Detected network event
+. 2025-12-26 12:33:15.372 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:33:15.372 [Shell] Remote version: SSH-2.0-OpenSSH_for_Windows_9.5
+. 2025-12-26 12:33:15.372 [Shell] Using SSH protocol version 2
+. 2025-12-26 12:33:15.373 [Shell] Have a known host key of type ssh-ed25519
+. 2025-12-26 12:33:15.484 [Shell] Detected network event
+. 2025-12-26 12:33:15.485 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:33:15.485 [Shell] Enabling strict key exchange semantics
+. 2025-12-26 12:33:15.485 [Shell] Doing ECDH key exchange with curve Curve25519, using hash SHA-256
+. 2025-12-26 12:33:15.504 [Shell] Detected network event
+. 2025-12-26 12:33:15.505 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:33:15.551 [Shell] Server also has ecdsa-sha2-nistp256/rsa-sha2-512/rsa-sha2-256 host keys, but we don't know any of them
+. 2025-12-26 12:33:15.552 [Shell] Host key fingerprint is:
+. 2025-12-26 12:33:15.552 [Shell] ssh-ed25519 255 SHA256:zZaaNDrfO2wvz4/49ceEw2YSLl1QITM3RLOvFc+1Hn0
+. 2025-12-26 12:33:15.552 [Shell] Verifying host key ssh-ed25519 0x62cc5b36a873c218 12980e344ba2b92f a44622c5e607b852 19ea4e4452154086 ,0x64ee115895856fa4 86e47767c83bfc83 3e7426229df7bb5b e6864e4cd7567015  with fingerprints ssh-ed25519 255 SHA256:zZaaNDrfO2wvz4/49ceEw2YSLl1QITM3RLOvFc+1Hn0, ssh-ed25519 255 85:c5:e8:70:f4:b0:8d:71:b7:ad:64:0b:f0:e9:9e:67
+< 2025-12-26 12:33:15.552 [Shell] Script: 正在验证...
+. 2025-12-26 12:33:15.552 [Shell] Host key does not match cached key 0x51d4845775a2fb3a e68b972b2703ba46 289d343be537c60b a1586506ca228e15 ,0x292e42e515f90b13 892acf1794740097 ccc2a6d7665fc2fa 91039f312303183f 
+. 2025-12-26 12:33:15.552 [Shell] Host key matches cached key
+. 2025-12-26 12:33:15.553 [Shell] Initialised AES-256 SDCTR (unaccelerated) [aes256-ctr] outbound encryption
+. 2025-12-26 12:33:15.553 [Shell] Initialised HMAC-SHA-256 outbound MAC algorithm
+. 2025-12-26 12:33:15.553 [Shell] Initialised AES-256 SDCTR (unaccelerated) [aes256-ctr] inbound encryption
+. 2025-12-26 12:33:15.553 [Shell] Initialised HMAC-SHA-256 inbound MAC algorithm
+. 2025-12-26 12:33:15.556 [Shell] Detected network event
+. 2025-12-26 12:33:15.556 [Shell] Waiting for the server to continue with the initialization
+! 2025-12-26 12:33:15.557 [Shell] Using username "a".
+< 2025-12-26 12:33:15.557 [Shell] Script: 使用用户名 "a"。
+. 2025-12-26 12:33:15.575 [Shell] Detected network event
+. 2025-12-26 12:33:15.575 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:33:15.575 [Shell] Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2025-12-26 12:33:15.575 [Shell] Attempting keyboard-interactive authentication
+. 2025-12-26 12:33:15.592 [Shell] Detected network event
+. 2025-12-26 12:33:15.592 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:33:15.592 [Shell] Server refused keyboard-interactive authentication
+. 2025-12-26 12:33:15.592 [Shell] Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2025-12-26 12:33:15.592 [Shell] Prompt (password, "SSH password", <no instructions>, "密码(&P)：")
+. 2025-12-26 12:33:15.592 [Shell] Using stored password.
+< 2025-12-26 12:33:15.592 [Shell] Script: 以预置密码进行验证。
+. 2025-12-26 12:33:15.592 [Shell] Sent password
+. 2025-12-26 12:33:15.639 [Shell] Detected network event
+. 2025-12-26 12:33:15.639 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:33:15.639 [Shell] Access granted
+. 2025-12-26 12:33:15.639 [Shell] Opening main session channel
+. 2025-12-26 12:33:15.750 [Shell] Detected network event
+. 2025-12-26 12:33:15.750 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:33:15.794 [Shell] Detected network event
+. 2025-12-26 12:33:15.794 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:33:15.794 [Shell] Opened main channel
+. 2025-12-26 12:33:15.823 [Shell] Detected network event
+. 2025-12-26 12:33:15.825 [Shell] Waiting for the server to continue with the initialization
+. 2025-12-26 12:33:15.826 [Shell] Started a shell/command
+< 2025-12-26 12:33:15.826 [Shell] Script: 已验证。
+. 2025-12-26 12:33:15.835 [Shell] --------------------------------------------------------------------------
+. 2025-12-26 12:33:15.835 [Shell] Using SCP protocol.
+. 2025-12-26 12:33:15.835 [Shell] Doing startup conversation with host.
+< 2025-12-26 12:33:15.835 [Shell] Script: 正在开始会话...
+. 2025-12-26 12:33:15.835 [Shell] Skipping host startup message (if any).
+> 2025-12-26 12:33:15.835 [Shell] echo "WinSCP: this is end-of-file:0"
+. 2025-12-26 12:33:15.835 [Shell] Sent 37 bytes
+. 2025-12-26 12:33:15.835 [Shell] There are 0 bytes remaining in the send buffer
+. 2025-12-26 12:33:15.835 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:33:15.914 [Shell] Detected network event
+. 2025-12-26 12:33:15.914 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:33:15.914 [Shell] Received 40 bytes
+. 2025-12-26 12:33:15.914 [Shell] Read 1 bytes (39 pending)
+. 2025-12-26 12:33:15.914 [Shell] Read 39 bytes (0 pending)
+. 2025-12-26 12:33:15.914 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:33:15.914 [Shell] Detected network event
+. 2025-12-26 12:33:15.914 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:33:15.914 [Shell] Received 45 bytes
+. 2025-12-26 12:33:15.914 [Shell] Received 2 bytes
+. 2025-12-26 12:33:15.914 [Shell] Read 1 bytes (46 pending)
+. 2025-12-26 12:33:15.914 [Shell] Read 1 bytes (45 pending)
+< 2025-12-26 12:33:15.914 [Shell] Microsoft Windows [版本 10.0.26200.7462]
+. 2025-12-26 12:33:15.914 [Shell] Read 43 bytes (2 pending)
+< 2025-12-26 12:33:15.914 [Shell] (c) Microsoft Corporation。保留所有权利。
+. 2025-12-26 12:33:15.914 [Shell] Read 2 bytes (0 pending)
+< 2025-12-26 12:33:15.914 [Shell] 
+. 2025-12-26 12:33:15.914 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:33:15.915 [Shell] Detected network event
+. 2025-12-26 12:33:15.915 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:33:15.915 [Shell] Received 29 bytes
+. 2025-12-26 12:33:15.915 [Shell] Received 37 bytes
+. 2025-12-26 12:33:15.915 [Shell] Read 1 bytes (65 pending)
+. 2025-12-26 12:33:15.915 [Shell] Read 65 bytes (0 pending)
+< 2025-12-26 12:33:15.915 [Shell] a@DESKTOP-0A06EDQ C:\Users\a>echo "WinSCP: this is end-of-file:0"
+. 2025-12-26 12:33:15.915 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:33:15.916 [Shell] Detected network event
+. 2025-12-26 12:33:15.916 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:33:15.916 [Shell] Received 33 bytes
+. 2025-12-26 12:33:15.916 [Shell] Read 1 bytes (32 pending)
+. 2025-12-26 12:33:15.916 [Shell] Read 32 bytes (0 pending)
+< 2025-12-26 12:33:15.916 [Shell] "WinSCP: this is end-of-file:0"
+. 2025-12-26 12:33:15.916 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:33:15.916 [Shell] Detected network event
+. 2025-12-26 12:33:15.916 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:33:15.916 [Shell] Received 2 bytes
+. 2025-12-26 12:33:15.916 [Shell] Received 29 bytes
+. 2025-12-26 12:33:15.916 [Shell] Read 1 bytes (30 pending)
+. 2025-12-26 12:33:15.916 [Shell] Read 1 bytes (29 pending)
+< 2025-12-26 12:33:15.916 [Shell] 
+. 2025-12-26 12:33:15.916 [Shell] Read 29 bytes (0 pending)
+. 2025-12-26 12:33:15.916 [Shell] Waiting for another 1 bytes
+. 2025-12-26 12:33:46.089 [Shell] Waiting for data timed out, asking user what to do.
+. 2025-12-26 12:33:46.089 [Shell] Asking user:
+. 2025-12-26 12:33:46.089 [Shell] **30秒内没有连通主机。
+. 2025-12-26 12:33:46.089 [Shell] 
+. 2025-12-26 12:33:46.089 [Shell] 再等30秒？** ()
+< 2025-12-26 12:33:46.089 Script: 主机超过30秒无通信。继续等待...
+< 2025-12-26 12:33:46.089 请注意：如果问题依然出现，尝试关闭'优化连接缓冲大小'。
+< 2025-12-26 12:33:46.089 警告：中止这个操作为关闭连接！
+. 2025-12-26 12:34:46.312 [Shell] Detected network event
+. 2025-12-26 12:34:46.312 [Shell] Data has arrived, closing query to user.
+. 2025-12-26 12:34:46.312 [Shell] Answer: OK
+. 2025-12-26 12:34:46.312 [Shell] Network error: Software caused connection abort
+< 2025-12-26 12:34:46.321 Script: 网络错误：软件造成的连接中止
+< 2025-12-26 12:34:46.321 跳过开始消息时出错。你的Shell可能与本程序不兼容(推荐使用Bash)。
+. 2025-12-26 12:34:46.322 Script: Failed
+. 2025-12-26 12:34:46.322 Session upkeep
+. 2025-12-26 12:34:46.322 Detected network event
+. 2025-12-26 12:34:46.322 Network error: Software caused connection abort
+. 2025-12-26 12:34:46.325 Script: Failed
+< 2025-12-26 12:34:46.325 Script: 网络错误：软件造成的连接中止
+. 2025-12-26 12:34:46.325 Script: Exit code: 1
+. 2025-12-26 12:34:46.325 Script: Max roundtrip: 516

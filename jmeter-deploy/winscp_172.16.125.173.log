@@ -1,0 +1,218 @@
+. 2025-12-26 12:23:52.254 --------------------------------------------------------------------------
+. 2025-12-26 12:23:52.254 WinSCP 版本6.5.5 (构建版本 16453 2025-11-19) (OS 10.0.18363 – Windows 10 Pro)
+. 2025-12-26 12:23:52.254 Configuration: HKCU\Software\Martin Prikryl\WinSCP 2\
+. 2025-12-26 12:23:52.254 Log level: Normal
+. 2025-12-26 12:23:52.254 Local account: WIN10-0024\admin
+. 2025-12-26 12:23:52.254 Working directory: D:\测试资料\性能监控环境搭建\jmeter-deploy
+. 2025-12-26 12:23:52.254 Process ID: 5736
+. 2025-12-26 12:23:52.269 Ancestor processes: WinSCP, powershell, explorer, ...
+. 2025-12-26 12:23:52.269 Command-line: "D:\测试资料\性能监控环境搭建\jmeter-deploy\tools\WinSCP\WinSCP.exe" /console=6.5.5 /consoleinstance=_16672_4 "/script=C:\Users\admin\AppData\Local\Temp\tmp8880.tmp" "/log=.\winscp_172.16.125.173.log" "/loglevel=0" "/nooptimizebuffer" "/timeout=60" 
+. 2025-12-26 12:23:52.270 Time zone: Current: GMT+8 (中国标准时间), No DST
+. 2025-12-26 12:23:52.270 Login time: 2025年12月26日 12:23:52
+. 2025-12-26 12:23:52.270 --------------------------------------------------------------------------
+. 2025-12-26 12:23:52.270 Script: Retrospectively logging previous script records:
+> 2025-12-26 12:23:52.270 Script: open scp://a:***@172.16.125.173 -hostkey="*" -timeout=60
+. 2025-12-26 12:23:52.270 --------------------------------------------------------------------------
+. 2025-12-26 12:23:52.270 Session name: a@172.16.125.173 (Ad-Hoc site)
+. 2025-12-26 12:23:52.270 Host name: 172.16.125.173 (Port: 22)
+. 2025-12-26 12:23:52.270 User name: a (Password: Yes, Key file: No, Passphrase: No)
+. 2025-12-26 12:23:52.270 Tunnel: No
+. 2025-12-26 12:23:52.270 Transfer Protocol: SCP
+. 2025-12-26 12:23:52.270 Ping type: Off, Ping interval: 30 sec; Timeout: 60 sec
+. 2025-12-26 12:23:52.270 Disable Nagle: No
+. 2025-12-26 12:23:52.270 Proxy: None
+. 2025-12-26 12:23:52.270 Send buffer: 262144
+. 2025-12-26 12:23:52.270 Compression: No
+. 2025-12-26 12:23:52.270 Bypass authentication: No
+. 2025-12-26 12:23:52.270 Try agent: Yes; Agent forwarding: No; KI: Yes; GSSAPI: Yes
+. 2025-12-26 12:23:52.270 GSSAPI: KEX: No; Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2025-12-26 12:23:52.270 Ciphers: aes,chacha20,aesgcm,3des,WARN,des,blowfish,arcfour; Ssh2DES: No
+. 2025-12-26 12:23:52.270 KEX: ntru-curve25519,mlkem-curve25519,mlkem-nist,ecdh,dh-gex-sha1,dh-group18-sha512,dh-group17-sha512,dh-group16-sha512,dh-group15-sha512,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2025-12-26 12:23:52.270 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2025-12-26 12:23:52.270 Simple channel: Yes
+. 2025-12-26 12:23:52.270 Return code variable: Autodetect; Lookup user groups: Auto
+. 2025-12-26 12:23:52.270 Shell: default
+. 2025-12-26 12:23:52.270 EOL: LF, UTF: Auto
+. 2025-12-26 12:23:52.270 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2025-12-26 12:23:52.270 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2025-12-26 12:23:52.270 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2025-12-26 12:23:52.270 Cache directory changes: Yes, Permanent: Yes
+. 2025-12-26 12:23:52.271 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2025-12-26 12:23:52.271 DST mode: Unix;Timezone offset: 0h 0m
+. 2025-12-26 12:23:52.271 --------------------------------------------------------------------------
+< 2025-12-26 12:23:52.271 Script: 寻找主机...
+. 2025-12-26 12:23:52.445 Looking up host "172.16.125.173" for SSH connection
+. 2025-12-26 12:23:52.447 Connecting to 172.16.125.173 port 22
+. 2025-12-26 12:23:52.514 Connected to 172.16.125.173 (from 192.168.10.123:56286)
+< 2025-12-26 12:23:52.514 Script: 连接到主机...
+. 2025-12-26 12:23:52.515 We claim version: SSH-2.0-WinSCP_release_6.5.5
+. 2025-12-26 12:23:52.515 Connected to 172.16.125.173 (from 192.168.10.123:56286)
+. 2025-12-26 12:23:52.629 Remote version: SSH-2.0-OpenSSH_for_Windows_9.5
+. 2025-12-26 12:23:52.629 Using SSH protocol version 2
+. 2025-12-26 12:23:52.630 Have a known host key of type ssh-ed25519
+. 2025-12-26 12:23:52.735 Enabling strict key exchange semantics
+. 2025-12-26 12:23:52.736 Doing ECDH key exchange with curve Curve25519, using hash SHA-256
+. 2025-12-26 12:23:52.804 Server also has ecdsa-sha2-nistp256/rsa-sha2-512/rsa-sha2-256 host keys, but we don't know any of them
+. 2025-12-26 12:23:52.805 Host key fingerprint is:
+. 2025-12-26 12:23:52.805 ssh-ed25519 255 SHA256:zZaaNDrfO2wvz4/49ceEw2YSLl1QITM3RLOvFc+1Hn0
+< 2025-12-26 12:23:52.805 Script: 正在验证...
+. 2025-12-26 12:23:52.805 Host key does not match cached key
+. 2025-12-26 12:23:52.805 Host key matches cached key
+. 2025-12-26 12:23:52.806 Initialised AES-256 SDCTR (unaccelerated) [aes256-ctr] outbound encryption
+. 2025-12-26 12:23:52.806 Initialised HMAC-SHA-256 outbound MAC algorithm
+. 2025-12-26 12:23:52.806 Initialised AES-256 SDCTR (unaccelerated) [aes256-ctr] inbound encryption
+. 2025-12-26 12:23:52.806 Initialised HMAC-SHA-256 inbound MAC algorithm
+! 2025-12-26 12:23:52.810 Using username "a".
+< 2025-12-26 12:23:52.810 Script: 使用用户名 "a"。
+. 2025-12-26 12:23:52.830 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2025-12-26 12:23:52.830 Attempting keyboard-interactive authentication
+. 2025-12-26 12:23:52.851 Server refused keyboard-interactive authentication
+. 2025-12-26 12:23:52.851 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2025-12-26 12:23:52.851 Prompt (password, "SSH password", <no instructions>, "密码(&P)：")
+. 2025-12-26 12:23:52.851 Using stored password.
+< 2025-12-26 12:23:52.851 Script: 以预置密码进行验证。
+. 2025-12-26 12:23:52.851 Sent password
+. 2025-12-26 12:23:52.900 Access granted
+. 2025-12-26 12:23:52.901 Opening main session channel
+. 2025-12-26 12:23:53.062 Opened main channel
+. 2025-12-26 12:23:53.094 Started a shell/command
+< 2025-12-26 12:23:53.094 Script: 已验证。
+. 2025-12-26 12:23:53.094 --------------------------------------------------------------------------
+. 2025-12-26 12:23:53.094 Using SCP protocol.
+. 2025-12-26 12:23:53.095 Doing startup conversation with host.
+< 2025-12-26 12:23:53.095 Script: 正在开始会话...
+. 2025-12-26 12:23:53.103 Skipping host startup message (if any).
+> 2025-12-26 12:23:53.103 echo "WinSCP: this is end-of-file:0"
+< 2025-12-26 12:23:53.190 Microsoft Windows [版本 10.0.26200.7462]
+< 2025-12-26 12:23:53.190 (c) Microsoft Corporation。保留所有权利。
+< 2025-12-26 12:23:53.191 
+< 2025-12-26 12:23:53.191 a@DESKTOP-0A06EDQ C:\Users\a>echo "WinSCP: this is end-of-file:0"
+< 2025-12-26 12:23:53.192 "WinSCP: this is end-of-file:0"
+< 2025-12-26 12:23:53.193 
+. 2025-12-26 12:24:53.552 Waiting for data timed out, asking user what to do.
+. 2025-12-26 12:24:53.552 Asking user:
+. 2025-12-26 12:24:53.552 **60秒内没有连通主机。
+. 2025-12-26 12:24:53.552 
+. 2025-12-26 12:24:53.552 再等60秒？** ()
+< 2025-12-26 12:24:53.552 Script: 主机超过60秒无通信。继续等待...
+< 2025-12-26 12:24:53.552 请注意：如果问题依然出现，尝试关闭'优化连接缓冲大小'。
+< 2025-12-26 12:24:53.552 警告：中止这个操作为关闭连接！
+. 2025-12-26 12:25:54.371 Answer: No
+. 2025-12-26 12:25:54.371 Attempt to close connection due to fatal exception:
+* 2025-12-26 12:25:54.371 **等待服务端应答时发生超时。**
+. 2025-12-26 12:25:54.371 Closing connection.
+. 2025-12-26 12:25:54.371 Sending special code: 1
+. 2025-12-26 12:25:54.482 Session sent command exit status 0
+. 2025-12-26 12:25:54.482 Main session channel closed
+. 2025-12-26 12:25:54.483 All channels closed
+< 2025-12-26 12:25:54.491 Script: 等待服务端应答时发生超时。
+< 2025-12-26 12:25:54.491 跳过开始消息时出错。你的Shell可能与本程序不兼容(推荐使用Bash)。
+. 2025-12-26 12:28:08.437 --------------------------------------------------------------------------
+. 2025-12-26 12:28:08.438 WinSCP 版本6.5.5 (构建版本 16453 2025-11-19) (OS 10.0.18363 – Windows 10 Pro)
+. 2025-12-26 12:28:08.438 Configuration: HKCU\Software\Martin Prikryl\WinSCP 2\
+. 2025-12-26 12:28:08.438 Log level: Normal
+. 2025-12-26 12:28:08.438 Local account: WIN10-0024\admin
+. 2025-12-26 12:28:08.438 Working directory: D:\测试资料\性能监控环境搭建\jmeter-deploy
+. 2025-12-26 12:28:08.438 Process ID: 22448
+. 2025-12-26 12:28:08.452 Ancestor processes: WinSCP, powershell, explorer, ...
+. 2025-12-26 12:28:08.452 Command-line: "D:\测试资料\性能监控环境搭建\jmeter-deploy\tools\WinSCP\WinSCP.exe" /console=6.5.5 /consoleinstance=_16068_967 "/script=C:\Users\admin\AppData\Local\Temp\tmp70E2.tmp" "/log=.\winscp_172.16.125.173.log" "/loglevel=0" "/nooptimizebuffer" "/timeout=60" 
+. 2025-12-26 12:28:08.452 Time zone: Current: GMT+8 (中国标准时间), No DST
+. 2025-12-26 12:28:08.452 Login time: 2025年12月26日 12:28:08
+. 2025-12-26 12:28:08.453 --------------------------------------------------------------------------
+. 2025-12-26 12:28:08.453 Script: Retrospectively logging previous script records:
+> 2025-12-26 12:28:08.453 Script: open scp://a:***@172.16.125.173 -hostkey="*" -timeout=240
+. 2025-12-26 12:28:08.453 --------------------------------------------------------------------------
+. 2025-12-26 12:28:08.453 Session name: a@172.16.125.173 (Ad-Hoc site)
+. 2025-12-26 12:28:08.453 Host name: 172.16.125.173 (Port: 22)
+. 2025-12-26 12:28:08.453 User name: a (Password: Yes, Key file: No, Passphrase: No)
+. 2025-12-26 12:28:08.453 Tunnel: No
+. 2025-12-26 12:28:08.453 Transfer Protocol: SCP
+. 2025-12-26 12:28:08.453 Ping type: Off, Ping interval: 30 sec; Timeout: 240 sec
+. 2025-12-26 12:28:08.453 Disable Nagle: No
+. 2025-12-26 12:28:08.453 Proxy: None
+. 2025-12-26 12:28:08.453 Send buffer: 262144
+. 2025-12-26 12:28:08.453 Compression: No
+. 2025-12-26 12:28:08.453 Bypass authentication: No
+. 2025-12-26 12:28:08.453 Try agent: Yes; Agent forwarding: No; KI: Yes; GSSAPI: Yes
+. 2025-12-26 12:28:08.453 GSSAPI: KEX: No; Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2025-12-26 12:28:08.453 Ciphers: aes,chacha20,aesgcm,3des,WARN,des,blowfish,arcfour; Ssh2DES: No
+. 2025-12-26 12:28:08.453 KEX: ntru-curve25519,mlkem-curve25519,mlkem-nist,ecdh,dh-gex-sha1,dh-group18-sha512,dh-group17-sha512,dh-group16-sha512,dh-group15-sha512,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2025-12-26 12:28:08.453 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2025-12-26 12:28:08.453 Simple channel: Yes
+. 2025-12-26 12:28:08.453 Return code variable: Autodetect; Lookup user groups: Auto
+. 2025-12-26 12:28:08.453 Shell: default
+. 2025-12-26 12:28:08.453 EOL: LF, UTF: Auto
+. 2025-12-26 12:28:08.453 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2025-12-26 12:28:08.453 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2025-12-26 12:28:08.453 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2025-12-26 12:28:08.453 Cache directory changes: Yes, Permanent: Yes
+. 2025-12-26 12:28:08.453 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2025-12-26 12:28:08.453 DST mode: Unix;Timezone offset: 0h 0m
+. 2025-12-26 12:28:08.453 --------------------------------------------------------------------------
+< 2025-12-26 12:28:08.453 Script: 寻找主机...
+. 2025-12-26 12:28:08.686 Looking up host "172.16.125.173" for SSH connection
+. 2025-12-26 12:28:08.687 Connecting to 172.16.125.173 port 22
+. 2025-12-26 12:28:08.719 Connected to 172.16.125.173 (from 192.168.10.123:56410)
+< 2025-12-26 12:28:08.719 Script: 连接到主机...
+. 2025-12-26 12:28:08.720 We claim version: SSH-2.0-WinSCP_release_6.5.5
+. 2025-12-26 12:28:08.720 Connected to 172.16.125.173 (from 192.168.10.123:56410)
+. 2025-12-26 12:28:08.834 Remote version: SSH-2.0-OpenSSH_for_Windows_9.5
+. 2025-12-26 12:28:08.834 Using SSH protocol version 2
+. 2025-12-26 12:28:08.834 Have a known host key of type ssh-ed25519
+. 2025-12-26 12:28:08.956 Enabling strict key exchange semantics
+. 2025-12-26 12:28:08.957 Doing ECDH key exchange with curve Curve25519, using hash SHA-256
+. 2025-12-26 12:28:09.034 Server also has ecdsa-sha2-nistp256/rsa-sha2-512/rsa-sha2-256 host keys, but we don't know any of them
+. 2025-12-26 12:28:09.034 Host key fingerprint is:
+. 2025-12-26 12:28:09.034 ssh-ed25519 255 SHA256:zZaaNDrfO2wvz4/49ceEw2YSLl1QITM3RLOvFc+1Hn0
+< 2025-12-26 12:28:09.034 Script: 正在验证...
+. 2025-12-26 12:28:09.035 Host key does not match cached key
+. 2025-12-26 12:28:09.035 Host key matches cached key
+. 2025-12-26 12:28:09.035 Initialised AES-256 SDCTR (unaccelerated) [aes256-ctr] outbound encryption
+. 2025-12-26 12:28:09.035 Initialised HMAC-SHA-256 outbound MAC algorithm
+. 2025-12-26 12:28:09.035 Initialised AES-256 SDCTR (unaccelerated) [aes256-ctr] inbound encryption
+. 2025-12-26 12:28:09.035 Initialised HMAC-SHA-256 inbound MAC algorithm
+! 2025-12-26 12:28:09.040 Using username "a".
+< 2025-12-26 12:28:09.040 Script: 使用用户名 "a"。
+. 2025-12-26 12:28:09.063 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2025-12-26 12:28:09.063 Attempting keyboard-interactive authentication
+. 2025-12-26 12:28:09.070 Server refused keyboard-interactive authentication
+. 2025-12-26 12:28:09.070 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2025-12-26 12:28:09.070 Prompt (password, "SSH password", <no instructions>, "密码(&P)：")
+. 2025-12-26 12:28:09.070 Using stored password.
+< 2025-12-26 12:28:09.070 Script: 以预置密码进行验证。
+. 2025-12-26 12:28:09.070 Sent password
+. 2025-12-26 12:28:09.117 Access granted
+. 2025-12-26 12:28:09.117 Opening main session channel
+. 2025-12-26 12:28:09.269 Opened main channel
+. 2025-12-26 12:28:09.300 Started a shell/command
+< 2025-12-26 12:28:09.300 Script: 已验证。
+. 2025-12-26 12:28:09.300 --------------------------------------------------------------------------
+. 2025-12-26 12:28:09.300 Using SCP protocol.
+. 2025-12-26 12:28:09.300 Doing startup conversation with host.
+< 2025-12-26 12:28:09.300 Script: 正在开始会话...
+. 2025-12-26 12:28:09.309 Skipping host startup message (if any).
+> 2025-12-26 12:28:09.309 echo "WinSCP: this is end-of-file:0"
+< 2025-12-26 12:28:09.396 Microsoft Windows [版本 10.0.26200.7462]
+< 2025-12-26 12:28:09.396 (c) Microsoft Corporation。保留所有权利。
+< 2025-12-26 12:28:09.396 
+< 2025-12-26 12:28:09.397 a@DESKTOP-0A06EDQ C:\Users\a>echo "WinSCP: this is end-of-file:0"
+< 2025-12-26 12:28:09.398 "WinSCP: this is end-of-file:0"
+< 2025-12-26 12:28:09.398 
+. 2025-12-26 12:32:10.755 Waiting for data timed out, asking user what to do.
+. 2025-12-26 12:32:10.755 Asking user:
+. 2025-12-26 12:32:10.755 **240秒内没有连通主机。
+. 2025-12-26 12:32:10.755 
+. 2025-12-26 12:32:10.755 再等240秒？** ()
+< 2025-12-26 12:32:10.755 Script: 主机超过240秒无通信。继续等待...
+< 2025-12-26 12:32:10.755 请注意：如果问题依然出现，尝试关闭'优化连接缓冲大小'。
+< 2025-12-26 12:32:10.755 警告：中止这个操作为关闭连接！
+. 2025-12-26 12:33:11.582 Answer: No
+. 2025-12-26 12:33:11.582 Attempt to close connection due to fatal exception:
+* 2025-12-26 12:33:11.582 **等待服务端应答时发生超时。**
+. 2025-12-26 12:33:11.582 Closing connection.
+. 2025-12-26 12:33:11.582 Sending special code: 1
+. 2025-12-26 12:33:11.597 Session sent command exit status 0
+. 2025-12-26 12:33:11.597 Main session channel closed
+. 2025-12-26 12:33:11.597 All channels closed
+< 2025-12-26 12:33:11.606 Script: 等待服务端应答时发生超时。
+< 2025-12-26 12:33:11.606 跳过开始消息时出错。你的Shell可能与本程序不兼容(推荐使用Bash)。

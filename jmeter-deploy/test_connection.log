@@ -1,0 +1,196 @@
+. 2025-12-26 12:08:28.914 --------------------------------------------------------------------------
+. 2025-12-26 12:08:28.915 WinSCP 版本6.5.5 (构建版本 16453 2025-11-19) (OS 10.0.18363 – Windows 10 Pro)
+. 2025-12-26 12:08:28.915 Configuration: HKCU\Software\Martin Prikryl\WinSCP 2\
+. 2025-12-26 12:08:28.915 Log level: Normal
+. 2025-12-26 12:08:28.915 Local account: WIN10-0024\admin
+. 2025-12-26 12:08:28.915 Working directory: D:\测试资料\性能监控环境搭建\jmeter-deploy
+. 2025-12-26 12:08:28.915 Process ID: 21708
+. 2025-12-26 12:08:28.929 Ancestor processes: WinSCP, powershell, explorer, ...
+. 2025-12-26 12:08:28.930 Command-line: "D:\测试资料\性能监控环境搭建\jmeter-deploy\tools\WinSCP\WinSCP.exe" /console=6.5.5 /consoleinstance=_9448_383 "/script=test_winscp.txt" "/log=test_connection.log" 
+. 2025-12-26 12:08:28.931 Time zone: Current: GMT+8 (中国标准时间), No DST
+. 2025-12-26 12:08:28.931 Login time: 2025年12月26日 12:08:28
+. 2025-12-26 12:08:28.931 --------------------------------------------------------------------------
+. 2025-12-26 12:08:28.931 Script: Retrospectively logging previous script records:
+> 2025-12-26 12:08:28.931 Script: open sftp://a:***@172.16.125.173:22
+. 2025-12-26 12:08:28.931 --------------------------------------------------------------------------
+. 2025-12-26 12:08:28.931 Session name: a@172.16.125.173 (Ad-Hoc site)
+. 2025-12-26 12:08:28.931 Host name: 172.16.125.173 (Port: 22)
+. 2025-12-26 12:08:28.931 User name: a (Password: Yes, Key file: No, Passphrase: No)
+. 2025-12-26 12:08:28.931 Tunnel: No
+. 2025-12-26 12:08:28.931 Transfer Protocol: SFTP
+. 2025-12-26 12:08:28.931 Ping type: Off, Ping interval: 30 sec; Timeout: 15 sec
+. 2025-12-26 12:08:28.931 Disable Nagle: No
+. 2025-12-26 12:08:28.931 Proxy: None
+. 2025-12-26 12:08:28.932 Send buffer: 262144
+. 2025-12-26 12:08:28.932 Compression: No
+. 2025-12-26 12:08:28.932 Bypass authentication: No
+. 2025-12-26 12:08:28.932 Try agent: Yes; Agent forwarding: No; KI: Yes; GSSAPI: Yes
+. 2025-12-26 12:08:28.932 GSSAPI: KEX: No; Forwarding: No; Libs: gssapi32,sspi,custom; Custom: 
+. 2025-12-26 12:08:28.932 Ciphers: aes,chacha20,aesgcm,3des,WARN,des,blowfish,arcfour; Ssh2DES: No
+. 2025-12-26 12:08:28.932 KEX: ntru-curve25519,mlkem-curve25519,mlkem-nist,ecdh,dh-gex-sha1,dh-group18-sha512,dh-group17-sha512,dh-group16-sha512,dh-group15-sha512,dh-group14-sha1,rsa,WARN,dh-group1-sha1
+. 2025-12-26 12:08:28.932 SSH Bugs: Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto
+. 2025-12-26 12:08:28.932 Simple channel: Yes
+. 2025-12-26 12:08:28.932 Return code variable: Autodetect; Lookup user groups: Auto
+. 2025-12-26 12:08:28.932 Shell: default
+. 2025-12-26 12:08:28.932 EOL: LF, UTF: Auto
+. 2025-12-26 12:08:28.932 Clear aliases: Yes, Unset nat.vars: Yes, Resolve symlinks: Yes; Follow directory symlinks: No
+. 2025-12-26 12:08:28.932 LS: ls -la, Ign LS warn: Yes, Scp1 Comp: No; Exit code 1 is error: No
+. 2025-12-26 12:08:28.932 SFTP Bugs: Auto,Auto
+. 2025-12-26 12:08:28.932 SFTP Server: default
+. 2025-12-26 12:08:28.932 Local directory: default, Remote directory: home, Update: Yes, Cache: Yes
+. 2025-12-26 12:08:28.932 Cache directory changes: Yes, Permanent: Yes
+. 2025-12-26 12:08:28.932 Recycle bin: Delete to: No, Overwritten to: No, Bin path: 
+. 2025-12-26 12:08:28.932 DST mode: Unix
+. 2025-12-26 12:08:28.932 --------------------------------------------------------------------------
+< 2025-12-26 12:08:28.932 Script: 寻找主机...
+. 2025-12-26 12:08:28.977 Looking up host "172.16.125.173" for SSH connection
+. 2025-12-26 12:08:28.978 Connecting to 172.16.125.173 port 22
+. 2025-12-26 12:08:29.069 Connected to 172.16.125.173 (from 192.168.10.123:55953)
+< 2025-12-26 12:08:29.070 Script: 连接到主机...
+. 2025-12-26 12:08:29.070 We claim version: SSH-2.0-WinSCP_release_6.5.5
+. 2025-12-26 12:08:29.070 Connected to 172.16.125.173 (from 192.168.10.123:55953)
+. 2025-12-26 12:08:29.184 Remote version: SSH-2.0-OpenSSH_for_Windows_9.5
+. 2025-12-26 12:08:29.184 Using SSH protocol version 2
+. 2025-12-26 12:08:29.185 Have a known host key of type ssh-ed25519
+. 2025-12-26 12:08:29.290 Enabling strict key exchange semantics
+. 2025-12-26 12:08:29.292 Doing ECDH key exchange with curve Curve25519, using hash SHA-256
+. 2025-12-26 12:08:29.359 Server also has ecdsa-sha2-nistp256/rsa-sha2-512/rsa-sha2-256 host keys, but we don't know any of them
+. 2025-12-26 12:08:29.359 Host key fingerprint is:
+. 2025-12-26 12:08:29.359 ssh-ed25519 255 SHA256:zZaaNDrfO2wvz4/49ceEw2YSLl1QITM3RLOvFc+1Hn0
+< 2025-12-26 12:08:29.360 Script: 正在验证...
+. 2025-12-26 12:08:29.360 Host key does not match cached key
+. 2025-12-26 12:08:29.360 Host key matches cached key
+. 2025-12-26 12:08:29.361 Initialised AES-256 SDCTR (unaccelerated) [aes256-ctr] outbound encryption
+. 2025-12-26 12:08:29.361 Initialised HMAC-SHA-256 outbound MAC algorithm
+. 2025-12-26 12:08:29.361 Initialised AES-256 SDCTR (unaccelerated) [aes256-ctr] inbound encryption
+. 2025-12-26 12:08:29.361 Initialised HMAC-SHA-256 inbound MAC algorithm
+! 2025-12-26 12:08:29.365 Using username "a".
+< 2025-12-26 12:08:29.365 Script: 使用用户名 "a"。
+. 2025-12-26 12:08:29.383 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2025-12-26 12:08:29.383 Attempting keyboard-interactive authentication
+. 2025-12-26 12:08:29.389 Server refused keyboard-interactive authentication
+. 2025-12-26 12:08:29.389 Server offered these authentication methods: publickey,password,keyboard-interactive
+. 2025-12-26 12:08:29.390 Prompt (password, "SSH password", <no instructions>, "密码(&P)：")
+. 2025-12-26 12:08:29.390 Using stored password.
+< 2025-12-26 12:08:29.390 Script: 以预置密码进行验证。
+. 2025-12-26 12:08:29.390 Sent password
+. 2025-12-26 12:08:29.436 Access granted
+. 2025-12-26 12:08:29.437 Opening main session channel
+. 2025-12-26 12:08:29.592 Opened main channel
+. 2025-12-26 12:08:29.623 Started a shell/command
+< 2025-12-26 12:08:29.623 Script: 已验证。
+. 2025-12-26 12:08:29.624 --------------------------------------------------------------------------
+. 2025-12-26 12:08:29.624 Using SFTP protocol.
+. 2025-12-26 12:08:29.624 Doing startup conversation with host.
+< 2025-12-26 12:08:29.624 Script: 正在开始会话...
+. 2025-12-26 12:08:29.628 Well known server, allowing SFTP version 6.
+> 2025-12-26 12:08:29.628 Type: SSH_FXP_INIT, Size: 5, Number: -1
+< 2025-12-26 12:08:29.752 Type: SSH_FXP_VERSION, Size: 250, Number: -1
+. 2025-12-26 12:08:29.752 SFTP version 3 negotiated.
+. 2025-12-26 12:08:29.752 Supports extension posix-rename@openssh.com="1"
+. 2025-12-26 12:08:29.752 Supports statvfs@openssh.com extension version 2
+. 2025-12-26 12:08:29.753 Supports hardlink@openssh.com extension version 1
+. 2025-12-26 12:08:29.753 Unknown server extension fsync@openssh.com="1"
+. 2025-12-26 12:08:29.753 Unknown server extension lsetstat@openssh.com="1"
+. 2025-12-26 12:08:29.753 Supports limits@openssh.com extension version 1
+. 2025-12-26 12:08:29.753 Unknown server extension expand-path@openssh.com="1"
+. 2025-12-26 12:08:29.753 Supports extension copy-data="1"
+. 2025-12-26 12:08:29.753 Unknown server extension home-directory="1"
+. 2025-12-26 12:08:29.753 We believe the server has signed timestamps bug
+. 2025-12-26 12:08:29.753 We will use UTF-8 strings until server sends an invalid UTF-8 string as with SFTP version 3 and older UTF-8 strings are not mandatory
+> 2025-12-26 12:08:29.753 Type: SSH_FXP_EXTENDED, Size: 27, Number: 200
+< 2025-12-26 12:08:29.756 Type: SSH_FXP_EXTENDED_REPLY, Size: 37, Number: 200
+. 2025-12-26 12:08:29.756 Limiting packet size to server's limit of 262144 + 4 bytes
+. 2025-12-26 12:08:29.756 Getting current directory name.
+. 2025-12-26 12:08:29.756 Getting real path for '.'
+> 2025-12-26 12:08:29.756 Type: SSH_FXP_REALPATH, Size: 10, Number: 272
+< 2025-12-26 12:08:29.760 Type: SSH_FXP_NAME, Size: 43, Number: 272
+. 2025-12-26 12:08:29.760 Real path is '/C:/Users/a'
+. 2025-12-26 12:08:29.760 Startup conversation with host finished.
+< 2025-12-26 12:08:29.760 Script: 会话已开始。
+< 2025-12-26 12:08:29.761 Script: 活动的会话：[1] a@172.16.125.173
+> 2025-12-26 12:08:29.765 Script: pwd
+< 2025-12-26 12:08:29.765 Script: /C:/Users/a
+> 2025-12-26 12:08:29.765 Script: ls
+. 2025-12-26 12:08:29.765 Listing directory "/C:/Users/a".
+> 2025-12-26 12:08:29.765 Type: SSH_FXP_OPENDIR, Size: 20, Number: 523
+< 2025-12-26 12:08:29.771 Type: SSH_FXP_HANDLE, Size: 13, Number: 523
+> 2025-12-26 12:08:29.771 Type: SSH_FXP_READDIR, Size: 13, Number: 780
+< 2025-12-26 12:08:29.788 Type: SSH_FXP_NAME, Size: 4117, Number: 780
+> 2025-12-26 12:08:29.788 Type: SSH_FXP_READDIR, Size: 13, Number: 1036
+< 2025-12-26 12:08:29.791 Type: SSH_FXP_STATUS, Size: 28, Number: 1036
+< 2025-12-26 12:08:29.792 Status code: 1
+> 2025-12-26 12:08:29.792 Type: SSH_FXP_CLOSE, Size: 13, Number: 1284
+. 2025-12-26 12:08:29.792 .ssh;d;0;2025-12-26T02:21:07.000Z;4;"-" [0];"-" [0];rwx------;2
+. 2025-12-26 12:08:29.792 AppData;d;0;2025-12-25T05:13:26.000Z;4;"-" [0];"-" [0];rwx------;0
+. 2025-12-26 12:08:29.792 Application Data;d;0;2025-12-25T05:13:26.000Z;4;"-" [0];"-" [0];rwx------;0
+. 2025-12-26 12:08:29.792 Contacts;d;0;2025-12-25T05:13:49.000Z;4;"-" [0];"-" [0];r-x------;0
+. 2025-12-26 12:08:29.792 Cookies;d;0;2025-12-25T05:13:26.000Z;4;"-" [0];"-" [0];rwx------;0
+. 2025-12-26 12:08:29.792 Desktop;d;0;2025-12-25T05:13:49.000Z;4;"-" [0];"-" [0];r-x------;0
+. 2025-12-26 12:08:29.792 Documents;d;0;2025-12-25T05:13:49.000Z;4;"-" [0];"-" [0];r-x------;0
+. 2025-12-26 12:08:29.792 Downloads;d;0;2025-12-25T05:23:17.000Z;4;"-" [0];"-" [0];r-x------;0
+. 2025-12-26 12:08:29.792 Favorites;d;0;2025-12-25T05:13:49.000Z;4;"-" [0];"-" [0];r-x------;0
+. 2025-12-26 12:08:29.792 IntelGraphicsProfiles;d;0;2025-12-25T05:30:59.000Z;4;"-" [0];"-" [0];rwx------;0
+. 2025-12-26 12:08:29.792 Links;d;0;2025-12-25T05:13:49.000Z;4;"-" [0];"-" [0];r-x------;0
+. 2025-12-26 12:08:29.792 Local Settings;d;0;2025-12-25T05:13:26.000Z;4;"-" [0];"-" [0];rwx------;0
+. 2025-12-26 12:08:29.792 Music;d;0;2025-12-25T05:13:49.000Z;4;"-" [0];"-" [0];r-x------;0
+. 2025-12-26 12:08:29.792 My Documents;d;0;2025-12-25T05:13:26.000Z;4;"-" [0];"-" [0];rwx------;0
+. 2025-12-26 12:08:29.792 NetHood;d;0;2025-12-25T05:13:26.000Z;4;"-" [0];"-" [0];rwx------;0
+. 2025-12-26 12:08:29.792 NTUSER.DAT;-;2097152;2025-12-25T05:30:04.000Z;4;"-" [0];"-" [0];rw-------;0
+. 2025-12-26 12:08:29.792 ntuser.dat.LOG1;-;537600;2025-12-25T05:13:26.000Z;4;"-" [0];"-" [0];rw-------;0
+. 2025-12-26 12:08:29.792 ntuser.dat.LOG2;-;524288;2025-12-25T05:13:26.000Z;4;"-" [0];"-" [0];rw-------;0
+. 2025-12-26 12:08:29.792 NTUSER.DAT{117abb65-e148-11f0-a398-548d5a2fe1da}.TM.blf;-;65536;2025-12-25T05:13:39.000Z;4;"-" [0];"-" [0];rw-------;0
+. 2025-12-26 12:08:29.792 NTUSER.DAT{117abb65-e148-11f0-a398-548d5a2fe1da}.TMContainer00000000000000000001.regtrans-ms;-;524288;2025-12-25T05:13:26.000Z;4;"-" [0];"-" [0];rw-------;0
+. 2025-12-26 12:08:29.792 NTUSER.DAT{117abb65-e148-11f0-a398-548d5a2fe1da}.TMContainer00000000000000000002.regtrans-ms;-;524288;2025-12-25T05:13:26.000Z;4;"-" [0];"-" [0];rw-------;0
+. 2025-12-26 12:08:29.792 ntuser.ini;-;20;2025-12-25T05:13:26.000Z;4;"-" [0];"-" [0];rw-------;0
+. 2025-12-26 12:08:29.792 OneDrive;d;0;2025-12-25T05:15:43.000Z;4;"-" [0];"-" [0];r-x------;0
+. 2025-12-26 12:08:29.792 Pictures;d;0;2025-12-25T09:47:20.000Z;4;"-" [0];"-" [0];r-x------;0
+. 2025-12-26 12:08:29.792 PrintHood;d;0;2025-12-25T05:13:26.000Z;4;"-" [0];"-" [0];rwx------;0
+. 2025-12-26 12:08:29.792 Recent;d;0;2025-12-25T05:13:26.000Z;4;"-" [0];"-" [0];rwx------;0
+. 2025-12-26 12:08:29.792 Saved Games;d;0;2025-12-25T05:13:49.000Z;4;"-" [0];"-" [0];r-x------;0
+. 2025-12-26 12:08:29.792 Searches;d;0;2025-12-25T05:31:04.000Z;4;"-" [0];"-" [0];r-x------;0
+. 2025-12-26 12:08:29.792 SendTo;d;0;2025-12-25T05:13:26.000Z;4;"-" [0];"-" [0];rwx------;0
+. 2025-12-26 12:08:29.792 Templates;d;0;2025-12-25T05:13:26.000Z;4;"-" [0];"-" [0];rwx------;0
+. 2025-12-26 12:08:29.792 Videos;d;0;2025-12-25T05:13:49.000Z;4;"-" [0];"-" [0];r-x------;0
+. 2025-12-26 12:08:29.792 「开始」菜单;d;0;2025-12-25T05:13:26.000Z;4;"-" [0];"-" [0];rwx------;0
+. 2025-12-26 12:08:29.792 ..;D;0;1899-12-30T08:00:00.000Z;0;"" [0];"" [0];---------;0
+< 2025-12-26 12:08:29.792 Script: drwx------   1 -        -                0 Dec 26 10:21:07 2025 .ssh
+< 2025-12-26 12:08:29.793 Script: drwx------   1 -        -                0 Dec 25 13:13:26 2025 AppData
+< 2025-12-26 12:08:29.795 Script: drwx------   1 -        -                0 Dec 25 13:13:26 2025 Application Data
+< 2025-12-26 12:08:29.795 Script: dr-x------   1 -        -                0 Dec 25 13:13:49 2025 Contacts
+< 2025-12-26 12:08:29.796 Script: drwx------   1 -        -                0 Dec 25 13:13:26 2025 Cookies
+< 2025-12-26 12:08:29.796 Script: dr-x------   1 -        -                0 Dec 25 13:13:49 2025 Desktop
+< 2025-12-26 12:08:29.797 Script: dr-x------   1 -        -                0 Dec 25 13:13:49 2025 Documents
+< 2025-12-26 12:08:29.797 Script: dr-x------   1 -        -                0 Dec 25 13:23:17 2025 Downloads
+< 2025-12-26 12:08:29.798 Script: dr-x------   1 -        -                0 Dec 25 13:13:49 2025 Favorites
+< 2025-12-26 12:08:29.798 Script: drwx------   1 -        -                0 Dec 25 13:30:59 2025 IntelGraphicsProfiles
+< 2025-12-26 12:08:29.799 Script: dr-x------   1 -        -                0 Dec 25 13:13:49 2025 Links
+< 2025-12-26 12:08:29.799 Script: drwx------   1 -        -                0 Dec 25 13:13:26 2025 Local Settings
+< 2025-12-26 12:08:29.800 Script: dr-x------   1 -        -                0 Dec 25 13:13:49 2025 Music
+< 2025-12-26 12:08:29.800 Script: drwx------   1 -        -                0 Dec 25 13:13:26 2025 My Documents
+< 2025-12-26 12:08:29.801 Script: drwx------   1 -        -                0 Dec 25 13:13:26 2025 NetHood
+< 2025-12-26 12:08:29.801 Script: -rw-------   1 -        -          2097152 Dec 25 13:30:04 2025 NTUSER.DAT
+< 2025-12-26 12:08:29.802 Script: -rw-------   1 -        -           537600 Dec 25 13:13:26 2025 ntuser.dat.LOG1
+< 2025-12-26 12:08:29.802 Script: -rw-------   1 -        -           524288 Dec 25 13:13:26 2025 ntuser.dat.LOG2
+< 2025-12-26 12:08:29.803 Script: -rw-------   1 -        -            65536 Dec 25 13:13:39 2025 NTUSER.DAT{117abb65-e148-11f0-a398-548d5a2fe1da}.TM.blf
+< 2025-12-26 12:08:29.805 Script: -rw-------   1 -        -           524288 Dec 25 13:13:26 2025 NTUSER.DAT{117abb65-e148-11f0-a398-548d5a2fe1da}.TMContainer00000000000000000001.regtrans-ms
+< 2025-12-26 12:08:29.806 Script: -rw-------   1 -        -           524288 Dec 25 13:13:26 2025 NTUSER.DAT{117abb65-e148-11f0-a398-548d5a2fe1da}.TMContainer00000000000000000002.regtrans-ms
+< 2025-12-26 12:08:29.807 Script: -rw-------   1 -        -               20 Dec 25 13:13:26 2025 ntuser.ini
+< 2025-12-26 12:08:29.807 Script: dr-x------   1 -        -                0 Dec 25 13:15:43 2025 OneDrive
+< 2025-12-26 12:08:29.808 Script: dr-x------   1 -        -                0 Dec 25 17:47:20 2025 Pictures
+< 2025-12-26 12:08:29.808 Script: drwx------   1 -        -                0 Dec 25 13:13:26 2025 PrintHood
+< 2025-12-26 12:08:29.809 Script: drwx------   1 -        -                0 Dec 25 13:13:26 2025 Recent
+< 2025-12-26 12:08:29.809 Script: dr-x------   1 -        -                0 Dec 25 13:13:49 2025 Saved Games
+< 2025-12-26 12:08:29.810 Script: dr-x------   1 -        -                0 Dec 25 13:31:04 2025 Searches
+< 2025-12-26 12:08:29.810 Script: drwx------   1 -        -                0 Dec 25 13:13:26 2025 SendTo
+< 2025-12-26 12:08:29.811 Script: drwx------   1 -        -                0 Dec 25 13:13:26 2025 Templates
+< 2025-12-26 12:08:29.811 Script: dr-x------   1 -        -                0 Dec 25 13:13:49 2025 Videos
+< 2025-12-26 12:08:29.812 Script: drwx------   1 -        -                0 Dec 25 13:13:26 2025 「开始」菜单
+< 2025-12-26 12:08:29.812 Script: D---------   0                           0              ..
+> 2025-12-26 12:08:29.813 Script: exit
+. 2025-12-26 12:08:29.813 Script: Exit code: 0
+. 2025-12-26 12:08:29.813 Closing connection.
+. 2025-12-26 12:08:29.813 Sending special code: 1
+. 2025-12-26 12:08:29.837 Session sent command exit status 0
+. 2025-12-26 12:08:29.837 Main session channel closed
+. 2025-12-26 12:08:29.837 All channels closed

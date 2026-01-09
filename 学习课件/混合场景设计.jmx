@@ -46,7 +46,7 @@
         <stringProp name="filename"></stringProp>
       </ResultCollector>
       <hashTree/>
-      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="聚合报告">
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="聚合报告" enabled="true">
         <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
@@ -140,7 +140,7 @@ log.info(&quot;✅ 已生成用户：${username},${password}&quot;)</stringProp>
             <stringProp name="TestPlan.comments">用这个来生成用户名和密码，注册所需要的参数值</stringProp>
           </JSR223PreProcessor>
           <hashTree/>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="假如是注册接口 ${user_name}  ${user_password}" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="假如是注册接口 ${user_name}  ${user_password}">
             <stringProp name="TestPlan.comments">生成的参数值可以可以在这个接口用，用${user_name}  ${user_password} 这个表达式提取</stringProp>
             <stringProp name="HTTPSampler.domain">baidu.com</stringProp>
             <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -246,7 +246,7 @@ try {
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree>
-            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 数据文件设置">
+            <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 数据文件设置" enabled="true">
               <stringProp name="delimiter">,</stringProp>
               <stringProp name="fileEncoding">UTF-8</stringProp>
               <stringProp name="filename">D:/测试资料/性能监控环境搭建/学习课件/user_01.txt</stringProp>
@@ -258,20 +258,20 @@ try {
               <stringProp name="variableNames">username,password</stringProp>
             </CSVDataSet>
             <hashTree/>
-            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON提取器">
+            <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON提取器" enabled="true">
               <stringProp name="JSONPostProcessor.referenceNames">token</stringProp>
               <stringProp name="JSONPostProcessor.jsonPathExprs">$.data.id_token</stringProp>
               <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
             </JSONPostProcessor>
             <hashTree/>
           </hashTree>
-          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="IF 控制器">
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="IF 控制器" enabled="true">
             <stringProp name="IfController.condition">&quot;${token}&quot; != &quot;&quot;</stringProp>
             <boolProp name="IfController.evaluateAll">false</boolProp>
             <boolProp name="IfController.useExpression">false</boolProp>
           </IfController>
           <hashTree>
-            <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="吞吐量控制器-新增用户控制器">
+            <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="吞吐量控制器-新增用户控制器" enabled="true">
               <intProp name="ThroughputController.style">1</intProp>
               <boolProp name="ThroughputController.perThread">true</boolProp>
               <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -300,7 +300,7 @@ try {
                 </elementProp>
               </HTTPSamplerProxy>
               <hashTree>
-                <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON提取器">
+                <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON提取器" enabled="true">
                   <stringProp name="JSONPostProcessor.referenceNames">userUid</stringProp>
                   <stringProp name="JSONPostProcessor.jsonPathExprs">$.data</stringProp>
                   <stringProp name="JSONPostProcessor.match_numbers">1</stringProp>
@@ -313,7 +313,7 @@ try {
                 <boolProp name="IfController.useExpression">false</boolProp>
               </IfController>
               <hashTree>
-                <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="吞吐量控制器-删除用户控制器">
+                <ThroughputController guiclass="ThroughputControllerGui" testclass="ThroughputController" testname="吞吐量控制器-删除用户控制器" enabled="true">
                   <intProp name="ThroughputController.style">1</intProp>
                   <boolProp name="ThroughputController.perThread">true</boolProp>
                   <intProp name="ThroughputController.maxThroughput">1</intProp>
@@ -324,7 +324,7 @@ try {
                   </FloatProperty>
                 </ThroughputController>
                 <hashTree>
-                  <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="删除用户">
+                  <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="删除用户" enabled="true">
                     <stringProp name="HTTPSampler.domain">192.168.10.134</stringProp>
                     <stringProp name="HTTPSampler.protocol">http</stringProp>
                     <stringProp name="HTTPSampler.path">/api/user/delete</stringProp>
@@ -361,7 +361,7 @@ try {
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP信息头管理器">
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP信息头管理器" enabled="true">
           <collectionProp name="HeaderManager.headers">
             <elementProp name="" elementType="Header">
               <stringProp name="Header.name">Content-Type</stringProp>

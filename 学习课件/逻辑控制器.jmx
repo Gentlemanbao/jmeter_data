@@ -5,8 +5,6 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="用户定义的变量">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
-      <boolProp name="TestPlan.functional_mode">false</boolProp>
-      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="线程组1" enabled="false">
@@ -20,27 +18,27 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="调试取样器" enabled="true">
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="调试取样器">
           <boolProp name="displayJMeterProperties">false</boolProp>
           <boolProp name="displayJMeterVariables">true</boolProp>
           <boolProp name="displaySystemProperties">false</boolProp>
         </DebugSampler>
         <hashTree/>
-        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="IF 控制器" enabled="true">
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="IF 控制器">
           <stringProp name="IfController.condition">${__groovy(1==1,)}</stringProp>
           <boolProp name="IfController.evaluateAll">false</boolProp>
           <boolProp name="IfController.useExpression">true</boolProp>
           <stringProp name="TestPlan.comments">需要使用groovy函数，然后才能返回表达式的判断结果，如果补使用groovy函数那就需要把下面第一个勾选项去除，然后直接输入判断表达式即可</stringProp>
         </IfController>
         <hashTree>
-          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="根据if条件判断，如果为true才会执行下面的取样器" enabled="true">
+          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="根据if条件判断，如果为true才会执行下面的取样器">
             <boolProp name="displayJMeterProperties">false</boolProp>
             <boolProp name="displayJMeterVariables">true</boolProp>
             <boolProp name="displaySystemProperties">false</boolProp>
           </DebugSampler>
           <hashTree/>
         </hashTree>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="查看结果树" enabled="true">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="查看结果树">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -95,21 +93,21 @@
           <boolProp name="displaySystemProperties">false</boolProp>
         </DebugSampler>
         <hashTree/>
-        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="IF 控制器">
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="IF 控制器" enabled="true">
           <stringProp name="IfController.condition">1==1</stringProp>
           <boolProp name="IfController.evaluateAll">false</boolProp>
           <boolProp name="IfController.useExpression">false</boolProp>
           <stringProp name="TestPlan.comments">需要使用groovy函数，然后才能返回表达式的判断结果，如果补使用groovy函数那就需要把下面第一个勾选项去除，然后直接输入判断表达式即可</stringProp>
         </IfController>
         <hashTree>
-          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="根据if条件判断，如果为true才会执行下面的取样器">
+          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="根据if条件判断，如果为true才会执行下面的取样器" enabled="true">
             <boolProp name="displayJMeterProperties">false</boolProp>
             <boolProp name="displayJMeterVariables">true</boolProp>
             <boolProp name="displaySystemProperties">false</boolProp>
           </DebugSampler>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="事务控制器">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="事务控制器" enabled="true">
           <stringProp name="TestPlan.comments">事物控制器就是用来把某一个业务的请求接口串起来，放在一个事物里面，比如下面的登录，下单，付款这些接口作为一个事物，记得勾选第一个选择项，这样聚合报告就会展示成一个样本，这个是做场景化的性能测试必须要使用的一种控制器</stringProp>
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
@@ -134,11 +132,11 @@
           </DebugSampler>
           <hashTree/>
         </hashTree>
-        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="仅一次控制器">
+        <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="仅一次控制器" enabled="true">
           <stringProp name="TestPlan.comments">相当一个线程执行一次，如果这个线程组的线程数设置为10 ，那每个线程执行一次，这个下面的注册接口就会执行10次，是这个意思</stringProp>
         </OnceOnlyController>
         <hashTree>
-          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="注册">
+          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="注册" enabled="true">
             <boolProp name="displayJMeterProperties">false</boolProp>
             <boolProp name="displayJMeterVariables">true</boolProp>
             <boolProp name="displaySystemProperties">false</boolProp>

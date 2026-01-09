@@ -24,7 +24,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 0,
+  "id": 11,
   "links": [],
   "panels": [
     {
@@ -790,8 +790,10 @@
       "pluginVersion": "12.3.1",
       "targets": [
         {
+          "editorMode": "code",
           "expr": "avg by (device) (node_disk_io_time_seconds_total) / avg by (device) (node_disk_reads_completed_total + node_disk_writes_completed_total) * 1000",
           "legendFormat": "%w_await (ms)",
+          "range": true,
           "refId": "A"
         }
       ],
@@ -1026,5 +1028,5 @@
   "timezone": "",
   "title": "Enhanced Host Performance Dashboard (vmstat/mpstat/pidstat/iostat)",
   "uid": "enhanced-host-perf-v3",
-  "version": 3
+  "version": 1
 }

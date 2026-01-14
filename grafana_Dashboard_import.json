@@ -109,10 +109,7 @@
       "id": 3,
       "options": {
         "legend": {
-          "calcs": [
-            "mean",
-            "max"
-          ],
+          "calcs": ["mean", "max"],
           "displayMode": "table",
           "placement": "right",
           "showLegend": true
@@ -207,10 +204,7 @@
       "id": 4,
       "options": {
         "legend": {
-          "calcs": [
-            "mean",
-            "max"
-          ],
+          "calcs": ["mean", "max"],
           "displayMode": "table",
           "placement": "right",
           "showLegend": true
@@ -301,10 +295,7 @@
       "id": 5,
       "options": {
         "legend": {
-          "calcs": [
-            "mean",
-            "max"
-          ],
+          "calcs": ["mean", "max"],
           "displayMode": "table",
           "placement": "right",
           "showLegend": true
@@ -390,10 +381,7 @@
       "id": 6,
       "options": {
         "legend": {
-          "calcs": [
-            "mean",
-            "max"
-          ],
+          "calcs": ["mean", "max"],
           "displayMode": "table",
           "placement": "right",
           "showLegend": true
@@ -479,10 +467,7 @@
       "id": 7,
       "options": {
         "legend": {
-          "calcs": [
-            "mean",
-            "max"
-          ],
+          "calcs": ["mean", "max"],
           "displayMode": "table",
           "placement": "right",
           "showLegend": true
@@ -586,10 +571,7 @@
       "id": 9,
       "options": {
         "legend": {
-          "calcs": [
-            "mean",
-            "max"
-          ],
+          "calcs": ["mean", "max"],
           "displayMode": "table",
           "placement": "right",
           "showLegend": true
@@ -603,17 +585,13 @@
       "pluginVersion": "12.3.1",
       "targets": [
         {
-          "editorMode": "code",
-          "expr": "rate(vmstat_bi_per_second[1m]) * 512",
-          "legendFormat": "BI (KB/s)",
-          "range": true,
+          "expr": "rate(node_disk_read_bytes_total{device!~\"^(loop|ram).*\"}[1m]) / 1024",
+          "legendFormat": "Read (KB/s) - {{device}}",
           "refId": "A"
         },
         {
-          "editorMode": "code",
-          "expr": "rate(vmstat_bo_per_second[1m]) * 512",
-          "legendFormat": "BO (KB/s)",
-          "range": true,
+          "expr": "rate(node_disk_written_bytes_total{device!~\"^(loop|ram).*\"}[1m]) / 1024",
+          "legendFormat": "Write (KB/s) - {{device}}",
           "refId": "B"
         }
       ],
@@ -684,10 +662,7 @@
       "id": 10,
       "options": {
         "legend": {
-          "calcs": [
-            "mean",
-            "max"
-          ],
+          "calcs": ["mean", "max"],
           "displayMode": "table",
           "placement": "right",
           "showLegend": true
@@ -701,8 +676,8 @@
       "pluginVersion": "12.3.1",
       "targets": [
         {
-          "expr": "rate(node_disk_io_time_seconds_total[1m]) * 100",
-          "legendFormat": "%util",
+          "expr": "rate(node_disk_io_time_seconds_total{device!~\"^(loop|ram).*\"}[1m]) * 100",
+          "legendFormat": "%util - {{device}}",
           "refId": "A"
         }
       ],
@@ -773,10 +748,7 @@
       "id": 11,
       "options": {
         "legend": {
-          "calcs": [
-            "mean",
-            "max"
-          ],
+          "calcs": ["mean", "max"],
           "displayMode": "table",
           "placement": "right",
           "showLegend": true
@@ -790,14 +762,17 @@
       "pluginVersion": "12.3.1",
       "targets": [
         {
-          "editorMode": "code",
-          "expr": "avg by (device) (node_disk_io_time_seconds_total) / avg by (device) (node_disk_reads_completed_total + node_disk_writes_completed_total) * 1000",
-          "legendFormat": "%w_await (ms)",
-          "range": true,
+          "expr": "rate(node_disk_read_time_seconds_total{device!~\"^(loop|ram).*\"}[1m]) / rate(node_disk_reads_completed_total{device!~\"^(loop|ram).*\"}[1m]) * 1000",
+          "legendFormat": "Read Await (r_await) - {{device}}",
           "refId": "A"
+        },
+        {
+          "expr": "rate(node_disk_write_time_seconds_total{device!~\"^(loop|ram).*\"}[1m]) / rate(node_disk_writes_completed_total{device!~\"^(loop|ram).*\"}[1m]) * 1000",
+          "legendFormat": "Write Await (w_await) - {{device}}",
+          "refId": "B"
         }
       ],
-      "title": "⏳ 平均等待时间 (%w_await)（对标 iostat %w_await）",
+      "title": "⏳ 读写平均等待时间（r_await / w_await）",
       "type": "timeseries"
     },
     {
@@ -864,7 +839,7 @@
               }
             ]
           },
-          "unit": "percentunit"
+          "unit": "percent"
         },
         "overrides": []
       },
@@ -877,10 +852,7 @@
       "id": 13,
       "options": {
         "legend": {
-          "calcs": [
-            "mean",
-            "max"
-          ],
+          "calcs": ["mean", "max"],
           "displayMode": "table",
           "placement": "right",
           "showLegend": true
@@ -894,7 +866,7 @@
       "pluginVersion": "12.3.1",
       "targets": [
         {
-          "expr": "sum by (name) (rate(namedprocess_namegroup_cpu_seconds_total{mode=\"user\"}[1m]) + rate(namedprocess_namegroup_cpu_seconds_total{mode=\"system\"}[1m]))",
+          "expr": "sum by (name) (rate(namedprocess_namegroup_cpu_seconds_total{mode=\"user\"}[1m]) + rate(namedprocess_namegroup_cpu_seconds_total{mode=\"system\"}[1m])) * 100",
           "legendFormat": "{{name}}",
           "refId": "A"
         }
@@ -966,10 +938,7 @@
       "id": 14,
       "options": {
         "legend": {
-          "calcs": [
-            "mean",
-            "max"
-          ],
+          "calcs": ["mean", "max"],
           "displayMode": "table",
           "placement": "right",
           "showLegend": true
@@ -995,13 +964,7 @@
   "preload": false,
   "refresh": "5s",
   "schemaVersion": 42,
-  "tags": [
-    "performance",
-    "linux",
-    "vmstat",
-    "pidstat",
-    "iostat"
-  ],
+  "tags": ["performance", "linux", "vmstat", "pidstat", "iostat"],
   "templating": {
     "list": [
       {
@@ -1021,12 +984,14 @@
     ]
   },
   "time": {
-    "from": "now-15m",
-    "to": "now"
+    "from": "2026-01-12T05:31:08.669Z",
+    "to": "2026-01-12T06:01:08.669Z"
   },
-  "timepicker": {},
+  "timepicker": {
+    "refresh_intervals": ["5s", "10s", "30s", "1m", "5m", "15m", "1h"]
+  },
   "timezone": "",
   "title": "Enhanced Host Performance Dashboard (vmstat/mpstat/pidstat/iostat)",
   "uid": "enhanced-host-perf-v3",
-  "version": 1
+  "version": 11
 }
